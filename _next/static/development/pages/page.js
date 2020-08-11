@@ -7,7 +7,7 @@
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, default */
 /***/ (function(module) {
 
-module.exports = [{"id":"utouch","description":"Physical Interaction and Human-Robot Interaction","prof":"Ehud Sharlin","url":"https://utouch.cpsc.ucalgary.ca/"},{"id":"curiosity","description":"Human-Centered Design for Creativity & Curiosity","prof":"Lora Oehlberg","url":"http://pages.cpsc.ucalgary.ca/~lora.oehlberg/"},{"id":"dataexperience","description":"Visual Data-driven Tools and Experiences","prof":"Wesley Willet","url":"https://dataexperience.cpsc.ucalgary.ca/"},{"id":"","description":"Tangible and Shape-changing Interfaces","prof":"Ryo Suzuki","url":null},{"id":"grouplab","description":"Research in HCI, CSCW, and UbiComp","prof":"Saul Greenberg (Emeritus)","url":"http://grouplab.cpsc.ucalgary.ca/"},{"id":"ricelab","description":"Rethinking Interaction, Collaboration, & Engagement","prof":"Anthony Tang (Adjunct - University of Toronto)","url":"https://ricelab.github.io/"},{"id":"innovis","description":"Innovations in Visualization Laboratory","prof":"Sheelagh Carpendale (Adjunct - Simon Fraser University)","url":"http://sheelaghcarpendale.ca/"}];
+module.exports = [{"id":"utouch","description":"Physical Interaction and Human-Robot Interaction","prof":"Ehud Sharlin","url":"https://utouch.cpsc.ucalgary.ca/"},{"id":"curiosity","description":"Human-Centered Design for Creativity & Curiosity","prof":"Lora Oehlberg","url":"http://pages.cpsc.ucalgary.ca/~lora.oehlberg/"},{"id":"dataexperience","description":"Visual Data-driven Tools and Experiences","prof":"Wesley Willet","url":"https://dataexperience.cpsc.ucalgary.ca/"},{"id":"suzuki","description":"Tangible and Shape-changing Interfaces","prof":"Ryo Suzuki","url":"https://ryosuzuki.org/"},{"id":"grouplab","description":"Research in HCI, CSCW, and UbiComp","prof":"Saul Greenberg (Emeritus)","url":"http://grouplab.cpsc.ucalgary.ca/"},{"id":"ricelab","description":"Rethinking Interaction, Collaboration, & Engagement","prof":"Anthony Tang (Adjunct - University of Toronto)","url":"https://ricelab.github.io/"},{"id":"innovis","description":"Innovations in Visualization Laboratory","prof":"Sheelagh Carpendale (Adjunct - Simon Fraser University)","url":"http://sheelaghcarpendale.ca/"}];
 
 /***/ }),
 
@@ -22,17 +22,6 @@ module.exports = [{"date":"2020-08-10","text":"One paper accepted to UIST 2020",
 
 /***/ }),
 
-/***/ "./content/output/people.json":
-/*!************************************!*\
-  !*** ./content/output/people.json ***!
-  \************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, default */
-/***/ (function(module) {
-
-module.exports = [{"name":"Ehud Sharlin","type":"faculty","title":"Professor","url":"http://contacts.ucalgary.ca/info/cpsc/profiles/102-3264"},{"name":"Wesley Willett","type":"faculty","title":"Assistant Professor","url":"http://www.wjwillett.net"},{"name":"Lora Oehlberg","type":"faculty","title":"Assistant Professor","url":"https://pages.cpsc.ucalgary.ca/~lora.oehlberg/"},{"name":"Ryo Suzuki","type":"faculty","title":"Assistant Professor","url":"https://ryosuzuki.org","scholar":"https://scholar.google.com/citations?user=klWjaQIAAAAJ","twitter":"https://twitter.com/ryosuzk","facebook":"https://www.facebook.com/ryosuzk"},{"name":"Soren Knudsen","type":"postdoc","title":"Postdoctoral Fellow","url":"http://sorenknudsen.com/"},{"name":"Carmen Hull","type":"phd","title":"PhD Student","url":"https://www.carmenhull.com/"},{"name":"Kurtis Danyluk","type":"phd","title":"PhD Student"},{"name":"Kendra Wannamaker","type":"master","title":"MSc Student"},{"name":"Sasha Ivanov","type":"master","title":"MSc Student"},{"name":"Nathalie Bressa","type":"visiting","title":"Visiting Researcher"}];
-
-/***/ }),
-
 /***/ "./content/output/summary.json":
 /*!*************************************!*\
   !*** ./content/output/summary.json ***!
@@ -40,7 +29,7 @@ module.exports = [{"name":"Ehud Sharlin","type":"faculty","title":"Professor","u
 /*! exports provided: fileMap, sourceFileArray, default */
 /***/ (function(module) {
 
-module.exports = {"fileMap":{"content/output/news.json":[{"date":"2020-08-10","text":"One paper accepted to UIST 2020","image":"uist-2020.jpg"},{"date":"2020-05-05","text":"Five papers accepted to CHI 2020","image":"chi-2020.jpg"}],"content/output/publications/chi-2018-dillman.json":{"date":"2018-04","title":"A Visual Interaction Cue Framework from Video Game Environments for Augmented Reality","authors":["Kody R. Dillman","Terrance Tin Hoi Mok","Anthony Tang","Lora Oehlberg","Alex Mitchell"],"year":2018,"series":"CHI 2018","dir":"content/output/publications","base":"chi-2018-dillman.json","ext":".json","sourceBase":"chi-2018-dillman.md","sourceExt":".md"},"content/output/publications/chi-2018-feick.json":{"date":"2018-04","title":"Perspective on and Re-orientation of Physical Proxies in Object-Focused Remote Collaboration","authors":["Martin Feick","Terrance Tin Hoi Mok","Anthony Tang","Lora Oehlberg","Ehud Sharlin"],"year":2018,"series":"CHI 2018","dir":"content/output/publications","base":"chi-2018-feick.json","ext":".json","sourceBase":"chi-2018-feick.md","sourceExt":".md"},"content/output/people.json":[{"name":"Ehud Sharlin","type":"faculty","title":"Professor","url":"http://contacts.ucalgary.ca/info/cpsc/profiles/102-3264"},{"name":"Wesley Willett","type":"faculty","title":"Assistant Professor","url":"http://www.wjwillett.net"},{"name":"Lora Oehlberg","type":"faculty","title":"Assistant Professor","url":"https://pages.cpsc.ucalgary.ca/~lora.oehlberg/"},{"name":"Ryo Suzuki","type":"faculty","title":"Assistant Professor","url":"https://ryosuzuki.org","scholar":"https://scholar.google.com/citations?user=klWjaQIAAAAJ","twitter":"https://twitter.com/ryosuzk","facebook":"https://www.facebook.com/ryosuzk"},{"name":"Soren Knudsen","type":"postdoc","title":"Postdoctoral Fellow","url":"http://sorenknudsen.com/"},{"name":"Carmen Hull","type":"phd","title":"PhD Student","url":"https://www.carmenhull.com/"},{"name":"Kurtis Danyluk","type":"phd","title":"PhD Student"},{"name":"Kendra Wannamaker","type":"master","title":"MSc Student"},{"name":"Sasha Ivanov","type":"master","title":"MSc Student"},{"name":"Nathalie Bressa","type":"visiting","title":"Visiting Researcher"}],"content/output/publications/chi-2020-goffin.json":{"date":"2020-04","title":"Interaction Techniques for Visual Exploration Using Embedded Word-Scale Visualizations","authors":["Pascal Goffin","Tanja Blascheck","Petra Isenberg","Wesley Willett"],"year":2020,"series":"CHI 2020","dir":"content/output/publications","base":"chi-2020-goffin.json","ext":".json","sourceBase":"chi-2020-goffin.md","sourceExt":".md"},"content/output/publications/dis-2019-bressa.json":{"date":"2019-06","title":"Sketching and Ideation Activities for Situated Visualization Design","authors":["Nathalie Bressa","Kendra Wannamaker","Henrik Korsgaard","Wesley Willett","Jo Vermeulen"],"year":2019,"series":"DIS 2019","dir":"content/output/publications","base":"dis-2019-bressa.json","ext":".json","sourceBase":"dis-2019-bressa.md","sourceExt":".md"},"content/output/publications/dis-2019-ledo.json":{"date":"2019-06","title":"Astral: Prototyping Mobile and Smart Object Interactive Behaviours Using Familiar Applications","authors":["David Ledo","Jo Vermeulen","Sheelagh Carpendale","Saul Greenberg","Lora Oehlberg","Sebastian Boring"],"year":2019,"series":"DIS 2019","dir":"content/output/publications","base":"dis-2019-ledo.json","ext":".json","sourceBase":"dis-2019-ledo.md","sourceExt":".md"},"content/output/publications/cnc-2019-hammad.json":{"date":"2019-06","title":"Mutation: Leveraging Performing Arts Practices in Cyborg Transitioning","authors":["Nour Hammad","Elaheh Sanoubari","Patrick Finn","Sowmya Somanath","James E. Young","Ehud Sharlin"],"year":2019,"series":"C&C 2019","dir":"content/output/publications","base":"cnc-2019-hammad.json","ext":".json","sourceBase":"cnc-2019-hammad.md","sourceExt":".md"},"content/output/publications/dis-2019-mahadevan.json":{"date":"2019-06","title":"AV-Pedestrian Interaction Design Using a Pedestrian Mixed Traffic Simulator","authors":["Karthik Mahadevan","Elaheh Sanoubari","Sowmya Somanath","James E. Young","Ehud Sharlin"],"year":2019,"series":"DIS 2019","dir":"content/output/publications","base":"dis-2019-mahadevan.json","ext":".json","sourceBase":"dis-2019-mahadevan.md","sourceExt":".md"},"content/output/publications/imwut-2020-wang.json":{"date":"2020-06","title":"AssessBlocks: Exploring Toy Block Play Features for Assessing Stress in Young Children after Natural Disasters","authors":["Xiyue Wang","Kazuki Takashima","Tomoaki Adachi","Patrick Finn","Ehud Sharlin","Yoshifumi Kitamura"],"year":2020,"series":"IMWUT 2020","dir":"content/output/publications","base":"imwut-2020-wang.json","ext":".json","sourceBase":"imwut-2020-wang.md","sourceExt":".md"},"content/output/publications/chi-2020-hou.json":{"date":"2020-04","title":"Autonomous Vehicle-Cyclist Interaction: Peril and Promise","authors":["Ming Hou","Karthik Mahadevan","Sowmya Somanath","Ehud Sharlin","Lora Oehlberg"],"year":2020,"series":"CHI 2020","dir":"content/output/publications","base":"chi-2020-hou.json","ext":".json","sourceBase":"chi-2020-hou.md","sourceExt":".md"},"content/output/publications/hri-2018-feick.json":{"date":"2018-04","title":"The Way You Move: The Effect of a Robot Surrogate Movement in Remote Collaboration","authors":["Martin Feick","Lora Oehlberg","Anthony Tang","André Miede","Ehud Sharlin"],"year":2018,"series":"HRI 2018","dir":"content/output/publications","base":"hri-2018-feick.json","ext":".json","sourceBase":"hri-2018-feick.md","sourceExt":".md"},"content/output/publications/chi-2019-danyluk.json":{"date":"2019-04","title":"Look-From Camera Control for 3D Terrain Maps","authors":["Kurtis Thorvald Danyluk","Bernhard Jenny","Wesley Willett"],"year":2019,"series":"CHI 2019","dir":"content/output/publications","base":"chi-2019-danyluk.json","ext":".json","sourceBase":"chi-2019-danyluk.md","sourceExt":".md"},"content/output/publications/iros-2020-hedayati.json":{"date":"2020-09","title":"PufferBot: Actuated Expandable Structures for Aerial Robots","authors":["Hooman Hedayati","Ryo Suzuki","Daniel Leithinger","Daniel Szafir"],"year":2020,"series":"IROS 2020","booktitle":"In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS '20)","publisher":"ACM, New York, NY, USA","pages":"1-7","dir":"content/output/publications","base":"iros-2020-hedayati.json","ext":".json","sourceBase":"iros-2020-hedayati.md","sourceExt":".md"},"content/output/publications/tei-2019-mikalauskas.json":{"date":"2019-02","title":"Beyond the Bare Stage: Exploring Props as Potential Improviser-Controlled Technology","authors":["Claire Mikalauskas","April Viczko","Lora Oehlberg"],"year":2019,"series":"TEI 2019","dir":"content/output/publications","base":"tei-2019-mikalauskas.json","ext":".json","sourceBase":"tei-2019-mikalauskas.md","sourceExt":".md"},"content/output/publications/tvcg-2019-blascheck.json":{"date":"2019-06","title":"Exploration Strategies for Discovery of Interactivity in Visualizations","authors":["Tanja Blascheck","Lindsay MacDonald Vermeulen","Jo Vermeulen","Charles Perin","Wesley Willett","Thomas Ertl","Sheelagh Carpendale"],"year":2019,"series":"TVCG 2019","dir":"content/output/publications","base":"tvcg-2019-blascheck.json","ext":".json","sourceBase":"tvcg-2019-blascheck.md","sourceExt":".md"},"content/output/publications/chi-2020-anjani.json":{"date":"2020-04","title":"Why do people watch others eat food? An Empirical Study on the Motivations and Practices of Mukbang Viewers","authors":["Laurensia Anjani","Terrance Tin Hoi Mok","Anthony Tang","Lora Oehlberg","Wooi Boon Goh"],"year":2020,"series":"CHI 2020","dir":"content/output/publications","base":"chi-2020-anjani.json","ext":".json","sourceBase":"chi-2020-anjani.md","sourceExt":".md"},"content/output/publications/chi-2018-mahadevan.json":{"date":"2018-04","title":"Communicating Awareness and Intent in Autonomous Vehicle-Pedestrian Interaction","authors":["Karthik Mahadevan","Sowmya Somanath","Ehud Sharlin"],"year":2018,"series":"CHI 2018","dir":"content/output/publications","base":"chi-2018-mahadevan.json","ext":".json","sourceBase":"chi-2018-mahadevan.md","sourceExt":".md"},"content/output/publications/tvcg-2020-walny.json":{"date":"2020-06","title":"Data Changes Everything: Challenges and Opportunities in Data Visualization Design Handoff","authors":["Jagoda Walny","Christian Frisson","Mieka West","Doris Kosminsky","Søren Knudsen","Sheelagh Carpendale","Wesley Willett"],"year":2020,"series":"TVCG 2020","dir":"content/output/publications","base":"tvcg-2020-walny.json","ext":".json","sourceBase":"tvcg-2020-walny.md","sourceExt":".md"},"content/output/publications/chi-2018-ledo.json":{"date":"2018-04","title":"Evaluation Strategies for HCI Toolkit Research","authors":["David Ledo","Steven Houben","Jo Vermeulen","Nicolai Marquardt","Lora Oehlberg","Saul Greenberg"],"year":2018,"series":"CHI 2018","dir":"content/output/publications","base":"chi-2018-ledo.json","ext":".json","sourceBase":"chi-2018-ledo.md","sourceExt":".md"},"content/output/publications/vr-2019-satriadi.json":{"date":"2019-04","title":"Augmented Reality Map Navigation with Freehand Gestures","authors":["Kadek Ananta Satriadi","Barrett Ens","Maxime Cordeil","Bernhard Jenny","Tobias Czauderna","Wesley Willett"],"year":2019,"series":"IEEE VR 2019","dir":"content/output/publications","base":"vr-2019-satriadi.json","ext":".json","sourceBase":"vr-2019-satriadi.md","sourceExt":".md"},"content/output/labs.json":[{"id":"utouch","description":"Physical Interaction and Human-Robot Interaction","prof":"Ehud Sharlin","url":"https://utouch.cpsc.ucalgary.ca/"},{"id":"curiosity","description":"Human-Centered Design for Creativity & Curiosity","prof":"Lora Oehlberg","url":"http://pages.cpsc.ucalgary.ca/~lora.oehlberg/"},{"id":"dataexperience","description":"Visual Data-driven Tools and Experiences","prof":"Wesley Willet","url":"https://dataexperience.cpsc.ucalgary.ca/"},{"id":"","description":"Tangible and Shape-changing Interfaces","prof":"Ryo Suzuki","url":null},{"id":"grouplab","description":"Research in HCI, CSCW, and UbiComp","prof":"Saul Greenberg (Emeritus)","url":"http://grouplab.cpsc.ucalgary.ca/"},{"id":"ricelab","description":"Rethinking Interaction, Collaboration, & Engagement","prof":"Anthony Tang (Adjunct - University of Toronto)","url":"https://ricelab.github.io/"},{"id":"innovis","description":"Innovations in Visualization Laboratory","prof":"Sheelagh Carpendale (Adjunct - Simon Fraser University)","url":"http://sheelaghcarpendale.ca/"}],"content/output/publications/mobilehci-2019-hung.json":{"date":"2019-04","title":"WatchPen: Using Cross-Device Interaction Concepts to Augment Pen-Based Interaction","authors":["Michael Hung","David Ledo","Lora Oehlberg"],"year":2019,"series":"MobileHCI 2019","dir":"content/output/publications","base":"mobilehci-2019-hung.json","ext":".json","sourceBase":"mobilehci-2019-hung.md","sourceExt":".md"},"content/output/publications/uist-2020-suzuki.json":{"date":"2020-10","title":"RealitySketch: Embedding Responsive Graphics and Visualizations in AR through Dynamic Sketching","authors":["Ryo Suzuki","Rubaiat Habib Kazi","Li-Yi Wei","Stephen DiVerdi","Wilmot Li","Daniel Leithinger"],"year":2020,"series":"UIST 2020","booktitle":"In Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology (UIST '20)","publisher":"ACM, New York, NY, USA","pages":"1-16","dir":"content/output/publications","base":"uist-2020-suzuki.json","ext":".json","sourceBase":"uist-2020-suzuki.md","sourceExt":".md"}},"sourceFileArray":["content/labs.yaml","content/news.yaml","content/people.yaml","content/publications/chi-2018-dillman.md","content/publications/chi-2018-feick.md","content/publications/chi-2018-ledo.md","content/publications/chi-2018-mahadevan.md","content/publications/chi-2019-danyluk.md","content/publications/chi-2020-anjani.md","content/publications/chi-2020-goffin.md","content/publications/chi-2020-hou.md","content/publications/cnc-2019-hammad.md","content/publications/dis-2019-bressa.md","content/publications/dis-2019-ledo.md","content/publications/dis-2019-mahadevan.md","content/publications/hri-2018-feick.md","content/publications/imwut-2020-wang.md","content/publications/iros-2020-hedayati.md","content/publications/mobilehci-2019-hung.md","content/publications/tei-2019-mikalauskas.md","content/publications/tvcg-2019-blascheck.md","content/publications/tvcg-2020-walny.md","content/publications/uist-2020-suzuki.md","content/publications/vr-2019-satriadi.md"]};
+module.exports = {"fileMap":{"content/output/news.json":[{"date":"2020-08-10","text":"One paper accepted to UIST 2020","image":"uist-2020.jpg"},{"date":"2020-05-05","text":"Five papers accepted to CHI 2020","image":"chi-2020.jpg"}],"content/output/people/bon-adriel-aseniero.json":{"name":"Bon Adriel Aseniero","type":"phd","url":"http://bonadriel.com/","scholar":"https://scholar.google.com/citations?user=V4nRMoMAAAAJ","twitter":"https://twitter.com/HexenKoenig","facebook":"https://www.facebook.com/bonadriel","linkedin":"https://www.linkedin.com/in/bon-adriel-aseniero-47140560/","dir":"content/output/people","base":"bon-adriel-aseniero.json","ext":".json","sourceBase":"bon-adriel-aseniero.yaml","sourceExt":".yaml"},"content/output/people/carmen-hull.json":{"name":"Carmen Hull","type":"phd","url":"https://www.carmenhull.com/","dir":"content/output/people","base":"carmen-hull.json","ext":".json","sourceBase":"carmen-hull.yaml","sourceExt":".yaml"},"content/output/people/christopher-smith.json":{"name":"Christopher Smith","type":"master","url":"https://sites.google.com/cse.uiu.ac.bd/ashratuzzavinasha","linkedin":"https://www.linkedin.com/in/christopher-smith-uofc/","dir":"content/output/people","base":"christopher-smith.json","ext":".json","sourceBase":"christopher-smith.yaml","sourceExt":".yaml"},"content/output/people/brennan-jones.json":{"name":"Brennan Jones","type":"phd","url":"https://brennanjones.com/","scholar":"https://scholar.google.ca/citations?user=yzxiadIAAAAJ","dir":"content/output/people","base":"brennan-jones.json","ext":".json","sourceBase":"brennan-jones.yaml","sourceExt":".yaml"},"content/output/people/ehud-sharlin.json":{"name":"Ehud Sharlin","type":"faculty","title":"Professor","url":"http://contacts.ucalgary.ca/info/cpsc/profiles/102-3264","scholar":"https://scholar.google.ca/citations?hl=en&user=eAFxlZIAAAAJ","dir":"content/output/people","base":"ehud-sharlin.json","ext":".json","sourceBase":"ehud-sharlin.yaml","sourceExt":".yaml"},"content/output/people/david-ledo.json":{"name":"David Ledo","type":"alumni","past":"phd","now":"Autodesk Research","url":"https://www.davidledo.com/","scholar":"https://scholar.google.com/citations?user=V_2BZDoAAAAJ","dir":"content/output/people","base":"david-ledo.json","ext":".json","sourceBase":"david-ledo.yaml","sourceExt":".yaml"},"content/output/people/kendra-wannamaker.json":{"name":"Kendra Wannamaker","type":"master","dir":"content/output/people","base":"kendra-wannamaker.json","ext":".json","sourceBase":"kendra-wannamaker.yaml","sourceExt":".yaml"},"content/output/people/kurtis-danyluk.json":{"name":"Kurtis Danyluk","type":"phd","dir":"content/output/people","base":"kurtis-danyluk.json","ext":".json","sourceBase":"kurtis-danyluk.yaml","sourceExt":".yaml"},"content/output/people/jessi-stark.json":{"name":"Jessi Stark","type":"alumni","past":"master","now":"University of Toronto","url":"https://jtstark.com/","scholar":"https://scholar.google.com/citations?user=aRkKN5UAAAAJ","twitter":"https://twitter.com/_jessistark","dir":"content/output/people","base":"jessi-stark.json","ext":".json","sourceBase":"jessi-stark.yaml","sourceExt":".yaml"},"content/output/people/karthik-mahadevan.json":{"name":"Karthik Mahadevan","type":"alumni","past":"master","now":"University of Toronto","url":"https://karthikm0.github.io/","scholar":"https://scholar.google.ca/citations?user=aK4siPkAAAAJ","dir":"content/output/people","base":"karthik-mahadevan.json","ext":".json","sourceBase":"karthik-mahadevan.yaml","sourceExt":".yaml"},"content/output/people/lora-oehlberg.json":{"name":"Lora Oehlberg","type":"faculty","title":"Assistant Professor","url":"https://pages.cpsc.ucalgary.ca/~lora.oehlberg/","scholar":"https://scholar.google.ca/citations?hl=en&user=8GzaBdwAAAAJ","dir":"content/output/people","base":"lora-oehlberg.json","ext":".json","sourceBase":"lora-oehlberg.yaml","sourceExt":".yaml"},"content/output/people/nicolai-marquardt.json":{"name":"Nicolai Marquardt","type":"alumni","past":"phd","now":"University College London","url":"http://www.nicolaimarquardt.com/","scholar":"https://scholar.google.com/citations?user=PXeN0RsAAAAJ","dir":"content/output/people","base":"nicolai-marquardt.json","ext":".json","sourceBase":"nicolai-marquardt.yaml","sourceExt":".yaml"},"content/output/people/nathalie-bressa.json":{"name":"Nathalie Bressa","type":"visiting","dir":"content/output/people","base":"nathalie-bressa.json","ext":".json","sourceBase":"nathalie-bressa.yaml","sourceExt":".yaml"},"content/output/people/martin-feick.json":{"name":"Martin Feick","type":"phd","url":"http://martinfeick.com/","scholar":"https://scholar.google.de/citations?user=az0GkfQAAAAJ","github":"https://github.com/MartinFk","dir":"content/output/people","base":"martin-feick.json","ext":".json","sourceBase":"martin-feick.yaml","sourceExt":".yaml"},"content/output/people/ryo-suzuki.json":{"name":"Ryo Suzuki","type":"faculty","title":"Assistant Professor","url":"https://ryosuzuki.org","scholar":"https://scholar.google.com/citations?user=klWjaQIAAAAJ","twitter":"https://twitter.com/ryosuzk","facebook":"https://www.facebook.com/ryosuzk","email":"ryo.suzuki@ucalgary.ca","github":"https://github.com/ryosuzuki","linkedin":"https://www.linkedin.com/in/ryosuzuki/","dir":"content/output/people","base":"ryo-suzuki.json","ext":".json","sourceBase":"ryo-suzuki.yaml","sourceExt":".yaml"},"content/output/people/roberta-cabral-mota.json":{"name":"Roberta Cabral Mota","type":"phd","url":"https://www.robertacrmota.com/","dir":"content/output/people","base":"roberta-cabral-mota.json","ext":".json","sourceBase":"roberta-cabral-mota.yaml","sourceExt":".yaml"},"content/output/people/nour-hammad.json":{"name":"Nour Hammad","type":"undergrad","dir":"content/output/people","base":"nour-hammad.json","ext":".json","sourceBase":"nour-hammad.yaml","sourceExt":".yaml"},"content/output/people/sasha-ivanov.json":{"name":"Sasha Ivanov","type":"master","dir":"content/output/people","base":"sasha-ivanov.json","ext":".json","sourceBase":"sasha-ivanov.yaml","sourceExt":".yaml"},"content/output/people/saul-greenberg.json":{"name":"Saul Greenberg","type":"faculty","title":"Emeritus Professor","url":"http://saul.cpsc.ucalgary.ca/","scholar":"https://scholar.google.com/citations?user=TthhUuoAAAAJ","dir":"content/output/people","base":"saul-greenberg.json","ext":".json","sourceBase":"saul-greenberg.yaml","sourceExt":".yaml"},"content/output/people/darcy-norman.json":{"name":"D'Arcy Norman","type":"phd","url":"https://darcynorman.net/","twitter":"https://twitter.com/realdlnorman","dir":"content/output/people","base":"darcy-norman.json","ext":".json","sourceBase":"darcy-norman.yaml","sourceExt":".yaml"},"content/output/people/sheelagh-carpendale.json":{"name":"Sheelagh Carpendale","type":"faculty","title":"Adjunct Professor","url":"https://www.cs.sfu.ca/~sheelagh/","scholar":"https://scholar.google.com/citations?user=43LLX2kAAAAJ","dir":"content/output/people","base":"sheelagh-carpendale.json","ext":".json","sourceBase":"sheelagh-carpendale.yaml","sourceExt":".yaml"},"content/output/people/anthony-tang.json":{"name":"Anthony Tang","type":"faculty","title":"Adjunct Associate Professor","url":"https://hcitang.github.io/","scholar":"https://scholar.google.com/citations?user=RG1EQowAAAAJ","twitter":"https://twitter.com/proclubboy","github":"http://github.com/hcitang","dir":"content/output/people","base":"anthony-tang.json","ext":".json","sourceBase":"anthony-tang.yaml","sourceExt":".yaml"},"content/output/people/ashratuz-zavin-asha.json":{"name":"Ashratuz Zavin Asha","type":"master","url":"https://sites.google.com/cse.uiu.ac.bd/ashratuzzavinasha","scholar":"https://scholar.google.com/citations?user=E7gtMMoAAAAJ","dir":"content/output/people","base":"ashratuz-zavin-asha.json","ext":".json","sourceBase":"ashratuz-zavin-asha.yaml","sourceExt":".yaml"},"content/output/people/tim-au-yeung.json":{"name":"Tim Au Yeung","type":"phd","linkedin":"https://www.linkedin.com/in/tim-au-yeung-3a29816","dir":"content/output/people","base":"tim-au-yeung.json","ext":".json","sourceBase":"tim-au-yeung.yaml","sourceExt":".yaml"},"content/output/people/terrance-mok.json":{"name":"Terrance Mok","type":"phd","url":"http://terrancemok.com/","scholar":"https://scholar.google.ca/citations?user=nHkJDSEAAAAJ","twitter":"https://twitter.com/terrancem","linkedin":"https://www.linkedin.com/in/terrance-mok-22421011","dir":"content/output/people","base":"terrance-mok.json","ext":".json","sourceBase":"terrance-mok.yaml","sourceExt":".yaml"},"content/output/people/teddy-seyed.json":{"name":"Teddy Seyed","type":"alumni","past":"phd","now":"Microsoft Research","url":"https://www.microsoft.com/en-us/research/people/teddy/","scholar":"https://scholar.google.com/citations?user=A8VSir8AAAAJ","dir":"content/output/people","base":"teddy-seyed.json","ext":".json","sourceBase":"teddy-seyed.yaml","sourceExt":".yaml"},"content/output/people/soren-knudsen.json":{"name":"Søren Knudsen","type":"postdoc","url":"http://sorenknudsen.com/","dir":"content/output/people","base":"soren-knudsen.json","ext":".json","sourceBase":"soren-knudsen.yaml","sourceExt":".yaml"},"content/output/people/sowmya-somanath.json":{"name":"Sowmya Somanath","type":"alumni","past":"phd","now":"OCAD University","url":"http://pages.cpsc.ucalgary.ca/~ssomanat/","scholar":"https://scholar.google.ca/citations?user=R9ar1NkAAAAJ","twitter":"https://twitter.com/sowmyasomanath","dir":"content/output/people","base":"sowmya-somanath.json","ext":".json","sourceBase":"sowmya-somanath.yaml","sourceExt":".yaml"},"content/output/people/sydney-pratte.json":{"name":"Sydney Pratte","type":"phd","url":"https://www.sydneypratte.ca/","dir":"content/output/people","base":"sydney-pratte.json","ext":".json","sourceBase":"sydney-pratte.yaml","sourceExt":".yaml"},"content/output/people/wesley-willett.json":{"name":"Wesley Willett","type":"faculty","title":"Assistant Professor","url":"http://www.wjwillett.net","scholar":"https://scholar.google.ca/citations?user=Q17-rckAAAAJ","dir":"content/output/people","base":"wesley-willett.json","ext":".json","sourceBase":"wesley-willett.yaml","sourceExt":".yaml"},"content/output/people/zachary-mckendrick.json":{"name":"Zachary McKendrick","type":"phd","url":"https://scpa.ucalgary.ca/manageprofile/profiles/zachary-mckendrick","linkedin":"https://www.linkedin.com/in/zach-mckendrick-7a24bb3b","dir":"content/output/people","base":"zachary-mckendrick.json","ext":".json","sourceBase":"zachary-mckendrick.yaml","sourceExt":".yaml"},"content/output/people/william-wright.json":{"name":"William Wright","type":"masters","url":"http://pages.cpsc.ucalgary.ca/~wwright/","scholar":"https://scholar.google.com/citations?user=V4nRMoMAAAAJ","twitter":"https://twitter.com/HexenKoenig","facebook":"https://www.facebook.com/bonadriel","linkedin":"https://www.linkedin.com/in/bon-adriel-aseniero-47140560/","dir":"content/output/people","base":"william-wright.json","ext":".json","sourceBase":"william-wright.yaml","sourceExt":".yaml"},"content/output/publications/chi-2018-dillman.json":{"date":"2018-04","title":"A Visual Interaction Cue Framework from Video Game Environments for Augmented Reality","authors":["Kody R. Dillman","Terrance Tin Hoi Mok","Anthony Tang","Lora Oehlberg","Alex Mitchell"],"year":2018,"series":"CHI 2018","dir":"content/output/publications","base":"chi-2018-dillman.json","ext":".json","sourceBase":"chi-2018-dillman.md","sourceExt":".md"},"content/output/publications/chi-2019-danyluk.json":{"date":"2019-04","title":"Look-From Camera Control for 3D Terrain Maps","authors":["Kurtis Thorvald Danyluk","Bernhard Jenny","Wesley Willett"],"year":2019,"series":"CHI 2019","dir":"content/output/publications","base":"chi-2019-danyluk.json","ext":".json","sourceBase":"chi-2019-danyluk.md","sourceExt":".md"},"content/output/publications/chi-2020-anjani.json":{"date":"2020-04","title":"Why do people watch others eat food? An Empirical Study on the Motivations and Practices of Mukbang Viewers","authors":["Laurensia Anjani","Terrance Tin Hoi Mok","Anthony Tang","Lora Oehlberg","Wooi Boon Goh"],"year":2020,"series":"CHI 2020","dir":"content/output/publications","base":"chi-2020-anjani.json","ext":".json","sourceBase":"chi-2020-anjani.md","sourceExt":".md"},"content/output/publications/chi-2020-hou.json":{"date":"2020-04","title":"Autonomous Vehicle-Cyclist Interaction: Peril and Promise","authors":["Ming Hou","Karthik Mahadevan","Sowmya Somanath","Ehud Sharlin","Lora Oehlberg"],"year":2020,"series":"CHI 2020","dir":"content/output/publications","base":"chi-2020-hou.json","ext":".json","sourceBase":"chi-2020-hou.md","sourceExt":".md"},"content/output/publications/cnc-2019-hammad.json":{"date":"2019-06","title":"Mutation: Leveraging Performing Arts Practices in Cyborg Transitioning","authors":["Nour Hammad","Elaheh Sanoubari","Patrick Finn","Sowmya Somanath","James E. Young","Ehud Sharlin"],"year":2019,"series":"C&C 2019","dir":"content/output/publications","base":"cnc-2019-hammad.json","ext":".json","sourceBase":"cnc-2019-hammad.md","sourceExt":".md"},"content/output/publications/dis-2019-bressa.json":{"date":"2019-06","title":"Sketching and Ideation Activities for Situated Visualization Design","authors":["Nathalie Bressa","Kendra Wannamaker","Henrik Korsgaard","Wesley Willett","Jo Vermeulen"],"year":2019,"series":"DIS 2019","dir":"content/output/publications","base":"dis-2019-bressa.json","ext":".json","sourceBase":"dis-2019-bressa.md","sourceExt":".md"},"content/output/publications/chi-2020-goffin.json":{"date":"2020-04","title":"Interaction Techniques for Visual Exploration Using Embedded Word-Scale Visualizations","authors":["Pascal Goffin","Tanja Blascheck","Petra Isenberg","Wesley Willett"],"year":2020,"series":"CHI 2020","dir":"content/output/publications","base":"chi-2020-goffin.json","ext":".json","sourceBase":"chi-2020-goffin.md","sourceExt":".md"},"content/output/publications/dis-2019-mahadevan.json":{"date":"2019-06","title":"AV-Pedestrian Interaction Design Using a Pedestrian Mixed Traffic Simulator","authors":["Karthik Mahadevan","Elaheh Sanoubari","Sowmya Somanath","James E. Young","Ehud Sharlin"],"year":2019,"series":"DIS 2019","dir":"content/output/publications","base":"dis-2019-mahadevan.json","ext":".json","sourceBase":"dis-2019-mahadevan.md","sourceExt":".md"},"content/output/publications/dis-2019-ledo.json":{"date":"2019-06","title":"Astral: Prototyping Mobile and Smart Object Interactive Behaviours Using Familiar Applications","authors":["David Ledo","Jo Vermeulen","Sheelagh Carpendale","Saul Greenberg","Lora Oehlberg","Sebastian Boring"],"year":2019,"series":"DIS 2019","dir":"content/output/publications","base":"dis-2019-ledo.json","ext":".json","sourceBase":"dis-2019-ledo.md","sourceExt":".md"},"content/output/publications/chi-2018-feick.json":{"date":"2018-04","title":"Perspective on and Re-orientation of Physical Proxies in Object-Focused Remote Collaboration","authors":["Martin Feick","Terrance Tin Hoi Mok","Anthony Tang","Lora Oehlberg","Ehud Sharlin"],"year":2018,"series":"CHI 2018","dir":"content/output/publications","base":"chi-2018-feick.json","ext":".json","sourceBase":"chi-2018-feick.md","sourceExt":".md"},"content/output/publications/chi-2018-mahadevan.json":{"date":"2018-04","title":"Communicating Awareness and Intent in Autonomous Vehicle-Pedestrian Interaction","authors":["Karthik Mahadevan","Sowmya Somanath","Ehud Sharlin"],"year":2018,"series":"CHI 2018","dir":"content/output/publications","base":"chi-2018-mahadevan.json","ext":".json","sourceBase":"chi-2018-mahadevan.md","sourceExt":".md"},"content/output/publications/mobilehci-2019-hung.json":{"date":"2019-04","title":"WatchPen: Using Cross-Device Interaction Concepts to Augment Pen-Based Interaction","authors":["Michael Hung","David Ledo","Lora Oehlberg"],"year":2019,"series":"MobileHCI 2019","dir":"content/output/publications","base":"mobilehci-2019-hung.json","ext":".json","sourceBase":"mobilehci-2019-hung.md","sourceExt":".md"},"content/output/publications/tei-2019-mikalauskas.json":{"date":"2019-02","title":"Beyond the Bare Stage: Exploring Props as Potential Improviser-Controlled Technology","authors":["Claire Mikalauskas","April Viczko","Lora Oehlberg"],"year":2019,"series":"TEI 2019","dir":"content/output/publications","base":"tei-2019-mikalauskas.json","ext":".json","sourceBase":"tei-2019-mikalauskas.md","sourceExt":".md"},"content/output/publications/iros-2020-hedayati.json":{"date":"2020-09","title":"PufferBot: Actuated Expandable Structures for Aerial Robots","authors":["Hooman Hedayati","Ryo Suzuki","Daniel Leithinger","Daniel Szafir"],"year":2020,"series":"IROS 2020","booktitle":"In Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS '20)","publisher":"ACM, New York, NY, USA","pages":"1-7","dir":"content/output/publications","base":"iros-2020-hedayati.json","ext":".json","sourceBase":"iros-2020-hedayati.md","sourceExt":".md"},"content/output/publications/tvcg-2019-blascheck.json":{"date":"2019-06","title":"Exploration Strategies for Discovery of Interactivity in Visualizations","authors":["Tanja Blascheck","Lindsay MacDonald Vermeulen","Jo Vermeulen","Charles Perin","Wesley Willett","Thomas Ertl","Sheelagh Carpendale"],"year":2019,"series":"TVCG 2019","dir":"content/output/publications","base":"tvcg-2019-blascheck.json","ext":".json","sourceBase":"tvcg-2019-blascheck.md","sourceExt":".md"},"content/output/publications/tvcg-2020-walny.json":{"date":"2020-06","title":"Data Changes Everything: Challenges and Opportunities in Data Visualization Design Handoff","authors":["Jagoda Walny","Christian Frisson","Mieka West","Doris Kosminsky","Søren Knudsen","Sheelagh Carpendale","Wesley Willett"],"year":2020,"series":"TVCG 2020","dir":"content/output/publications","base":"tvcg-2020-walny.json","ext":".json","sourceBase":"tvcg-2020-walny.md","sourceExt":".md"},"content/output/publications/chi-2018-ledo.json":{"date":"2018-04","title":"Evaluation Strategies for HCI Toolkit Research","authors":["David Ledo","Steven Houben","Jo Vermeulen","Nicolai Marquardt","Lora Oehlberg","Saul Greenberg"],"year":2018,"series":"CHI 2018","dir":"content/output/publications","base":"chi-2018-ledo.json","ext":".json","sourceBase":"chi-2018-ledo.md","sourceExt":".md"},"content/output/publications/hri-2018-feick.json":{"date":"2018-04","title":"The Way You Move: The Effect of a Robot Surrogate Movement in Remote Collaboration","authors":["Martin Feick","Lora Oehlberg","Anthony Tang","André Miede","Ehud Sharlin"],"year":2018,"series":"HRI 2018","dir":"content/output/publications","base":"hri-2018-feick.json","ext":".json","sourceBase":"hri-2018-feick.md","sourceExt":".md"},"content/output/publications/imwut-2020-wang.json":{"date":"2020-06","title":"AssessBlocks: Exploring Toy Block Play Features for Assessing Stress in Young Children after Natural Disasters","authors":["Xiyue Wang","Kazuki Takashima","Tomoaki Adachi","Patrick Finn","Ehud Sharlin","Yoshifumi Kitamura"],"year":2020,"series":"IMWUT 2020","dir":"content/output/publications","base":"imwut-2020-wang.json","ext":".json","sourceBase":"imwut-2020-wang.md","sourceExt":".md"},"content/output/publications/uist-2020-suzuki.json":{"date":"2020-10","title":"RealitySketch: Embedding Responsive Graphics and Visualizations in AR through Dynamic Sketching","authors":["Ryo Suzuki","Rubaiat Habib Kazi","Li-Yi Wei","Stephen DiVerdi","Wilmot Li","Daniel Leithinger"],"year":2020,"series":"UIST 2020","booktitle":"In Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology (UIST '20)","publisher":"ACM, New York, NY, USA","pages":"1-16","dir":"content/output/publications","base":"uist-2020-suzuki.json","ext":".json","sourceBase":"uist-2020-suzuki.md","sourceExt":".md"},"content/output/publications/vr-2019-satriadi.json":{"date":"2019-04","title":"Augmented Reality Map Navigation with Freehand Gestures","authors":["Kadek Ananta Satriadi","Barrett Ens","Maxime Cordeil","Bernhard Jenny","Tobias Czauderna","Wesley Willett"],"year":2019,"series":"IEEE VR 2019","dir":"content/output/publications","base":"vr-2019-satriadi.json","ext":".json","sourceBase":"vr-2019-satriadi.md","sourceExt":".md"},"content/output/labs.json":[{"id":"utouch","description":"Physical Interaction and Human-Robot Interaction","prof":"Ehud Sharlin","url":"https://utouch.cpsc.ucalgary.ca/"},{"id":"curiosity","description":"Human-Centered Design for Creativity & Curiosity","prof":"Lora Oehlberg","url":"http://pages.cpsc.ucalgary.ca/~lora.oehlberg/"},{"id":"dataexperience","description":"Visual Data-driven Tools and Experiences","prof":"Wesley Willet","url":"https://dataexperience.cpsc.ucalgary.ca/"},{"id":"suzuki","description":"Tangible and Shape-changing Interfaces","prof":"Ryo Suzuki","url":"https://ryosuzuki.org/"},{"id":"grouplab","description":"Research in HCI, CSCW, and UbiComp","prof":"Saul Greenberg (Emeritus)","url":"http://grouplab.cpsc.ucalgary.ca/"},{"id":"ricelab","description":"Rethinking Interaction, Collaboration, & Engagement","prof":"Anthony Tang (Adjunct - University of Toronto)","url":"https://ricelab.github.io/"},{"id":"innovis","description":"Innovations in Visualization Laboratory","prof":"Sheelagh Carpendale (Adjunct - Simon Fraser University)","url":"http://sheelaghcarpendale.ca/"}]},"sourceFileArray":["content/labs.yaml","content/news.yaml","content/people/anthony-tang.yaml","content/people/ashratuz-zavin-asha.yaml","content/people/bon-adriel-aseniero.yaml","content/people/brennan-jones.yaml","content/people/carmen-hull.yaml","content/people/christopher-smith.yaml","content/people/darcy-norman.yaml","content/people/david-ledo.yaml","content/people/ehud-sharlin.yaml","content/people/jessi-stark.yaml","content/people/karthik-mahadevan.yaml","content/people/kendra-wannamaker.yaml","content/people/kurtis-danyluk.yaml","content/people/lora-oehlberg.yaml","content/people/martin-feick.yaml","content/people/nathalie-bressa.yaml","content/people/nicolai-marquardt.yaml","content/people/nour-hammad.yaml","content/people/roberta-cabral-mota.yaml","content/people/ryo-suzuki.yaml","content/people/sasha-ivanov.yaml","content/people/saul-greenberg.yaml","content/people/sheelagh-carpendale.yaml","content/people/soren-knudsen.yaml","content/people/sowmya-somanath.yaml","content/people/sydney-pratte.yaml","content/people/teddy-seyed.yaml","content/people/terrance-mok.yaml","content/people/tim-au-yeung.yaml","content/people/wesley-willett.yaml","content/people/william-wright.yaml","content/people/zachary-mckendrick.yaml","content/publications/chi-2018-dillman.md","content/publications/chi-2018-feick.md","content/publications/chi-2018-ledo.md","content/publications/chi-2018-mahadevan.md","content/publications/chi-2019-danyluk.md","content/publications/chi-2020-anjani.md","content/publications/chi-2020-goffin.md","content/publications/chi-2020-hou.md","content/publications/cnc-2019-hammad.md","content/publications/dis-2019-bressa.md","content/publications/dis-2019-ledo.md","content/publications/dis-2019-mahadevan.md","content/publications/hri-2018-feick.md","content/publications/imwut-2020-wang.md","content/publications/iros-2020-hedayati.md","content/publications/mobilehci-2019-hung.md","content/publications/tei-2019-mikalauskas.md","content/publications/tvcg-2019-blascheck.md","content/publications/tvcg-2020-walny.md","content/publications/uist-2020-suzuki.md","content/publications/vr-2019-satriadi.md"]};
 
 /***/ }),
 
@@ -74,6 +63,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ ".
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "./node_modules/core-js/library/fn/get-iterator.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "./node_modules/core-js/library/fn/object/assign.js");
 
 /***/ }),
 
@@ -1335,6 +1335,19 @@ module.exports = __webpack_require__(/*! ../modules/core.get-iterator */ "./node
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/object/assign.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/assign.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.assign */ "./node_modules/core-js/library/modules/es6.object.assign.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.assign;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/object/create.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/create.js ***!
@@ -2473,6 +2486,56 @@ module.exports.f = function (C) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_object-assign.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_object-assign.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+// 19.1.2.1 Object.assign(target, source, ...)
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js");
+var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
+var gOPS = __webpack_require__(/*! ./_object-gops */ "./node_modules/core-js/library/modules/_object-gops.js");
+var pIE = __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js");
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
+var IObject = __webpack_require__(/*! ./_iobject */ "./node_modules/core-js/library/modules/_iobject.js");
+var $assign = Object.assign;
+
+// should work with symbols and should have deterministic property order (V8 bug)
+module.exports = !$assign || __webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
+  var A = {};
+  var B = {};
+  // eslint-disable-next-line no-undef
+  var S = Symbol();
+  var K = 'abcdefghijklmnopqrst';
+  A[S] = 7;
+  K.split('').forEach(function (k) { B[k] = k; });
+  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
+}) ? function assign(target, source) { // eslint-disable-line no-unused-vars
+  var T = toObject(target);
+  var aLen = arguments.length;
+  var index = 1;
+  var getSymbols = gOPS.f;
+  var isEnum = pIE.f;
+  while (aLen > index) {
+    var S = IObject(arguments[index++]);
+    var keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S);
+    var length = keys.length;
+    var j = 0;
+    var key;
+    while (length > j) {
+      key = keys[j++];
+      if (!DESCRIPTORS || isEnum.call(S, key)) T[key] = S[key];
+    }
+  } return T;
+} : $assign;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_object-create.js":
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_object-create.js ***!
@@ -3454,6 +3517,21 @@ Iterators.Arguments = Iterators.Array;
 addToUnscopables('keys');
 addToUnscopables('values');
 addToUnscopables('entries');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.assign.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.assign.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.3.1 Object.assign(target, source)
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+
+$export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_object-assign */ "./node_modules/core-js/library/modules/_object-assign.js") });
 
 
 /***/ }),
@@ -15121,11 +15199,11 @@ var Labs = /*#__PURE__*/function (_React$Component) {
       }, _content_output_labs_json__WEBPACK_IMPORTED_MODULE_8__.map(function (lab) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
           class: "column"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          class: "ui segment"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
           href: lab.url,
           target: "_blank",
+          class: "ui segment"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
           className: "img"
         }, lab.id !== '' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
           src: "/static/images/labs/".concat(lab.id, ".png")
@@ -15299,18 +15377,18 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_b
 
 
 
-var Index = /*#__PURE__*/function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Index, _React$Component);
+var Page = /*#__PURE__*/function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Page, _React$Component);
 
-  var _super = _createSuper(Index);
+  var _super = _createSuper(Page);
 
-  function Index() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Index);
+  function Page() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Page);
 
     return _super.apply(this, arguments);
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(Index, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(Page, [{
     key: "renderSwitch",
     value: function renderSwitch(id) {
       switch (id) {
@@ -15377,10 +15455,10 @@ var Index = /*#__PURE__*/function (_React$Component) {
     }()
   }]);
 
-  return Index;
+  return Page;
 }(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Page);
 
 /***/ }),
 
@@ -15393,19 +15471,33 @@ var Index = /*#__PURE__*/function (_React$Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _content_output_people_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../content/output/people.json */ "./content/output/people.json");
-var _content_output_people_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/output/people.json */ "./content/output/people.json", 1);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../content/output/summary.json */ "./content/output/summary.json");
+var _content_output_summary_json__WEBPACK_IMPORTED_MODULE_15___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/output/summary.json */ "./content/output/summary.json", 1);
 
 
 
@@ -15413,9 +15505,22 @@ var _content_output_people_json__WEBPACK_IMPORTED_MODULE_8___namespace = /*#__PU
 
 
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(this).constructor; result = _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0___default()(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, result); }; }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0___default.a) return false; if (_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0___default.a.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_0___default()(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+
+
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_11__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_11__["default"])(this).constructor; result = _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default()(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_10__["default"])(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default.a) return false; if (_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default.a.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default()(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4___default.a === "undefined" || o[_babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3___default.a] == null) { if (_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2___default()(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1___default()(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5___default()(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 
 
@@ -15443,58 +15548,142 @@ var types = [{
   title: 'Alumni'
 }];
 
+var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
+
+var keys = fileNames.filter(function (fileName) {
+  return fileName.includes('people');
+});
+var people = [];
+
+var _iterator = _createForOfIteratorHelper(keys),
+    _step;
+
+try {
+  for (_iterator.s(); !(_step = _iterator.n()).done;) {
+    var key = _step.value;
+    var id = key.split('/')[3].replace('.json', '');
+
+    var person = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[key], {
+      id: id
+    });
+
+    people.push(person);
+  }
+} catch (err) {
+  _iterator.e(err);
+} finally {
+  _iterator.f();
+}
+
 var People = /*#__PURE__*/function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__["default"])(People, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__["default"])(People, _React$Component);
 
   var _super = _createSuper(People);
 
   function People() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, People);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_7__["default"])(this, People);
 
     return _super.apply(this, arguments);
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(People, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_8__["default"])(People, [{
     key: "componentDidMount",
     value: function componentDidMount() {}
   }, {
-    key: "render",
-    value: function render() {
-      if (this.props.short) {
-        types = types.slice(0, 4);
+    key: "getTitle",
+    value: function getTitle(person) {
+      if (person.title) return person;
+
+      switch (person.type) {
+        case 'postdoc':
+          person.title = 'Postdocotral Fellow';
+          break;
+
+        case 'phd':
+          person.title = 'PhD Student';
+          break;
+
+        case 'master':
+          person.title = 'MSc Student';
+          break;
+
+        case 'undergrad':
+          person.title = 'Undergraduate Student';
+          break;
+
+        case 'visiting':
+          person.title = 'Visiting Researcher';
+          break;
+
+        case 'alumni':
+          switch (person.past) {
+            case 'postdoc':
+              person.title = 'Alumni (PostDoc)';
+              break;
+
+            case 'phd':
+              person.title = 'Alumni (PhD)';
+              break;
+
+            case 'master':
+              person.title = 'Alumni (MSc)';
+              break;
+
+            case 'undergrad':
+              person.title = 'Alumni (Undergrad)';
+              break;
+
+            case 'visiting':
+              person.title = 'Alumni (Visiting)';
+              break;
+          }
+
+          break;
       }
 
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      return person;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      if (this.props.short) {
+        types = types.slice(0, 4); // types.splice(4, 2)
+      }
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         id: "people",
         className: "category"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("h1", {
         class: "ui horizontal divider header"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("i", {
         class: "child icon"
       }), "People"), types.map(function (type) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "people-category"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h2", null, type.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("h2", null, type.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "ui grid"
-        }, _content_output_people_json__WEBPACK_IMPORTED_MODULE_8__.filter(function (person) {
+        }, people.filter(function (person) {
           return person.type === type.key;
         }) // filter
         .map(function (person) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+          person = _this.getTitle(person);
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
             className: "four wide column person",
-            href: "/people/".concat(person.name.replace(' ', '-').toLowerCase())
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-            className: "ui tiny circular image",
-            src: "/static/images/people/".concat(person.name.replace(' ', '-').toLowerCase(), ".jpg")
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("b", null, person.name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", null, person.title)); // return
+            href: "/people/".concat(person.id)
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("img", {
+            className: "ui circular image medium-profile",
+            src: "/static/images/people/".concat(person.id, ".jpg")
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("b", null, person.name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("p", null, person.title, person.now && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("br", null), person.now))); // return
         }) // map
         ));
-      }), this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+      }), this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         className: "ui vertical segment stackable",
         style: {
           textAlign: 'center'
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
         className: "ui button",
         href: "/people"
       }, "+ see more members")));
@@ -15502,7 +15691,7 @@ var People = /*#__PURE__*/function (_React$Component) {
   }]);
 
   return People;
-}(react__WEBPACK_IMPORTED_MODULE_6___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_13___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (People);
 
@@ -15517,33 +15706,33 @@ var People = /*#__PURE__*/function (_React$Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
-/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _content_output_summary_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../content/output/summary.json */ "./content/output/summary.json");
-var _content_output_summary_json__WEBPACK_IMPORTED_MODULE_14___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/output/summary.json */ "./content/output/summary.json", 1);
-/* harmony import */ var _content_output_people_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../content/output/people.json */ "./content/output/people.json");
-var _content_output_people_json__WEBPACK_IMPORTED_MODULE_15___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/output/people.json */ "./content/output/people.json", 1);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../content/output/summary.json */ "./content/output/summary.json");
+var _content_output_summary_json__WEBPACK_IMPORTED_MODULE_15___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/output/summary.json */ "./content/output/summary.json", 1);
 
 
 
@@ -15557,13 +15746,14 @@ var _content_output_people_json__WEBPACK_IMPORTED_MODULE_15___namespace = /*#__P
 
 
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_10__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_10__["default"])(this).constructor; result = _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5___default()(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_9__["default"])(this, result); }; }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5___default.a) return false; if (_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5___default.a.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5___default()(Date, [], function () {})); return true; } catch (e) { return false; } }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_11__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_11__["default"])(this).constructor; result = _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default()(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_10__["default"])(this, result); }; }
 
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_3___default.a === "undefined" || o[_babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_2___default.a] == null) { if (_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_1___default()(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default.a) return false; if (_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default.a.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default()(Date, [], function () {})); return true; } catch (e) { return false; } }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_4___default()(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4___default.a === "undefined" || o[_babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3___default.a] == null) { if (_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2___default()(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1___default()(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5___default()(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
@@ -15571,8 +15761,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
-
-var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_11___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_14__.fileMap);
+var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
 
 var keys = fileNames.filter(function (fileName) {
   return fileName.includes('publications');
@@ -15585,7 +15774,7 @@ var _iterator = _createForOfIteratorHelper(keys),
 try {
   for (_iterator.s(); !(_step = _iterator.n()).done;) {
     var key = _step.value;
-    publications.push(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_14__.fileMap[key]);
+    publications.push(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[key]);
   }
 } catch (err) {
   _iterator.e(err);
@@ -15596,19 +15785,45 @@ try {
 publications = publications.sort(function (a, b) {
   return new Date(b.date) - new Date(a.date);
 });
+fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
+keys = fileNames.filter(function (fileName) {
+  return fileName.includes('people');
+});
+var people = [];
+
+var _iterator2 = _createForOfIteratorHelper(keys),
+    _step2;
+
+try {
+  for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+    var _key = _step2.value;
+
+    var id = _key.split('/')[3].replace('.json', '');
+
+    var person = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[_key], {
+      id: id
+    });
+
+    people.push(person);
+  }
+} catch (err) {
+  _iterator2.e(err);
+} finally {
+  _iterator2.f();
+}
 
 var Publications = /*#__PURE__*/function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_8__["default"])(Publications, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__["default"])(Publications, _React$Component);
 
   var _super = _createSuper(Publications);
 
   function Publications() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_6__["default"])(this, Publications);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_7__["default"])(this, Publications);
 
     return _super.apply(this, arguments);
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_7__["default"])(Publications, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_8__["default"])(Publications, [{
     key: "componentDidMount",
     value: function componentDidMount() {}
   }, {
@@ -15616,9 +15831,24 @@ var Publications = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       var _this = this;
 
-      var names = _content_output_people_json__WEBPACK_IMPORTED_MODULE_15__.map(function (person) {
+      var names = people.map(function (person) {
         return person.name;
       });
+      var namesId = {};
+
+      var _iterator3 = _createForOfIteratorHelper(people),
+          _step3;
+
+      try {
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var person = _step3.value;
+          namesId[person.name] = person.id;
+        }
+      } catch (err) {
+        _iterator3.e(err);
+      } finally {
+        _iterator3.f();
+      }
 
       if (this.props.short) {
         publications = publications.slice(0, 20);
@@ -15630,61 +15860,56 @@ var Publications = /*#__PURE__*/function (_React$Component) {
         });
       }
 
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         id: "publications",
         className: "category"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("h1", {
         class: "ui horizontal divider header"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("i", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("i", {
         class: "file alternate outline icon"
-      }), this.props.short ? 'Recent Publications' : 'Publications'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+      }), this.props.short ? 'Recent Publications' : 'Publications'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         className: "ui segment",
         style: {
           marginTop: '50px'
         }
       }, publications.map(function (publication, i) {
         var id = publication.base.split('.json')[0];
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "publication ui vertical segment stackable grid",
           "data-id": id
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "three wide column",
           style: {
             margin: 'auto'
           }
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("img", {
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("img", {
           className: "cover",
           src: "/static/images/publications/".concat(id, ".jpg")
-        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "thirteen wide column"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", {
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("span", {
           className: "ui big inverted teal label"
-        }, publication.series)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
+        }, publication.series)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
           href: "/publications/".concat(id),
           style: {
             fontSize: '1.3em'
           }
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("b", null, publication.title))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", null, publication.authors.map(function (author) {
-          var id = author.replace(' ', '-').toLowerCase();
-          return names.includes(author) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
-            href: "/people/".concat(id)
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("img", {
-            src: "/static/images/people/".concat(id, ".jpg"),
-            className: "ui mini circular spaced image",
-            style: {
-              width: '24px',
-              marginLeft: 0
-            }
-          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", null, author)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("span", null, author);
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("b", null, publication.title))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("p", null, publication.authors.map(function (author) {
+          return names.includes(author) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
+            href: "/people/".concat(namesId[author])
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("img", {
+            src: "/static/images/people/".concat(namesId[author], ".jpg"),
+            className: "ui circular spaced image mini-profile"
+          }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("span", null, author)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("span", null, author);
         }).reduce(function (prev, current) {
           return [prev, ' , ', current];
         }))));
-      })), this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
+      })), this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         className: "ui vertical segment stackable",
         style: {
           textAlign: 'center'
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
         className: "ui button",
         href: "/publications"
       }, "+ ".concat(publications.length, " more publications"))));
@@ -15692,13 +15917,13 @@ var Publications = /*#__PURE__*/function (_React$Component) {
   }]);
 
   return Publications;
-}(react__WEBPACK_IMPORTED_MODULE_12___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_13___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Publications);
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpage&absolutePagePath=%2FUsers%2Fryosuzuki%2FDocuments%2Filab%2Filab-website%2Fpages%2Fpage.js ***!
   \*********************************************************************************************************************************************/
@@ -15721,5 +15946,5 @@ module.exports = dll_4896fa23ba8deda57da6;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=page.js.map

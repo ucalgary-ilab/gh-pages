@@ -15698,7 +15698,7 @@ var Publications = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!*********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpage&absolutePagePath=%2FUsers%2Fryosuzuki%2FDocuments%2Filab%2Filab-website%2Fpages%2Fpage.js ***!
   \*********************************************************************************************************************************************/
@@ -15721,5 +15721,5 @@ module.exports = dll_4896fa23ba8deda57da6;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=page.js.map

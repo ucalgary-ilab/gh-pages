@@ -15091,7 +15091,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_b
 
 
 
-var items = ['Home', 'Publications', 'People', 'Courses', 'Facility', 'News', 'Access'];
+var items = ['Publications', 'People', 'Courses', 'Facility', 'News', 'Access'];
 
 var Header = /*#__PURE__*/function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__["default"])(Header, _React$Component);
@@ -15117,6 +15117,15 @@ var Header = /*#__PURE__*/function (_React$Component) {
           fontSize: '1.1em'
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "left menu"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        className: "item",
+        href: "/"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("b", {
+        style: {
+          color: '#00716C'
+        }
+      }, "UCalgary iLab"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "right menu"
       }, items.map(function (item) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
@@ -15882,10 +15891,12 @@ var Publications = /*#__PURE__*/function (_React$Component) {
           style: {
             margin: 'auto'
           }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
+          href: "/publications/".concat(id)
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("img", {
           className: "cover",
           src: "/static/images/publications/".concat(id, ".jpg")
-        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
+        }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "thirteen wide column"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("span", {
           className: "ui big inverted teal label"

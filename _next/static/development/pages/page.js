@@ -14937,7 +14937,13 @@ var Courses = /*#__PURE__*/function (_React$Component) {
         class: "university icon"
       }), "Courses"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         class: "ui divided items"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", null, "under construction")));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", null, "HCI Related Courses"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", null, "There are several courses related to HCI and InfoVis."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("table", {
+        class: "ui celled table"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("th", null, "Course"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("th", null, "Title"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "CPSC 481"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Human-Computer Interaction I")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "CPSC 502"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Research Project in Human Computer Interaction")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "CPSC 503"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Research Project in Human Computer Interaction")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "CPSC 581"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Human-Computer Interaction II")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "CPSC 583"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Introduction to Information Visualization")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "CPSC 584"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Human-Robot Interaction")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "CPSC 599"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Special Topics in Computer Science (Physical & Tangible HCI)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "CPSC 599"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Special Topics in Computer Science (Design of Mixed Reality App)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "CPSC 601"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Special Topics in Computer Science (Tangible and Physical HCI)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "DATA 601"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Working with Data and Visualization")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "DATA 605"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("td", null, "Actionable Visualization and Analytics")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", null, "Please see the course list for more details."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        href: "http://contacts.ucalgary.ca/info/cpsc/courses"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
+        className: "fas fa-link fa-fw"
+      }), "http://contacts.ucalgary.ca/info/cpsc/courses")));
     }
   }]);
 
@@ -15131,7 +15137,7 @@ var Detail = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
         className: "active section"
       }, this.publication.series)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
-        className: "ui grid",
+        className: "ui stackable grid",
         style: {
           marginTop: '10px'
         }
@@ -15206,7 +15212,7 @@ var Detail = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", null, "Figures"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
         id: "figure"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
-        className: "ui three cards",
+        className: "ui stackable three cards",
         style: {
           marginTop: '30px'
         }
@@ -15299,11 +15305,11 @@ var Facility = /*#__PURE__*/function (_React$Component) {
         class: "cogs icon"
       }), "Facility"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         class: "ui divided items"
-      }, categories.map(function (category) {
+      }, categories.map(function (category, i) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-          className: "category"
+          className: i === 0 ? '' : 'category'
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", null, category), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-          className: "ui four cards",
+          className: "ui stackable four cards",
           style: {
             marginTop: '30px'
           }
@@ -15471,6 +15477,17 @@ var Header = /*#__PURE__*/function (_React$Component) {
       var _this2 = this;
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "ui right vertical sidebar menu"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        className: "item",
+        href: "/"
+      }, "Home"), this.items.map(function (item) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+          className: _this2.props.current == item ? 'item active' : 'item',
+          href: "/".concat(item.toLowerCase()),
+          key: item
+        }, item);
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "ui stackable secondary pointing container menu",
         style: {
           borderBottom: 'none',
@@ -15491,10 +15508,19 @@ var Header = /*#__PURE__*/function (_React$Component) {
       }, this.items.map(function (item) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
           className: _this2.props.current == item ? 'item active' : 'item',
-          href: item === 'Home' ? '/' : "/".concat(item.toLowerCase()),
+          href: "/".concat(item.toLowerCase()),
           key: item
         }, item);
-      }))));
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "toc item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        href: "/"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("b", null, "UCalgary iLab")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
+        style: {
+          float: 'right'
+        },
+        className: "sidebar icon"
+      })))));
     }
   }]);
 
@@ -15560,18 +15586,22 @@ var Labs = /*#__PURE__*/function (_React$Component) {
         className: "ui horizontal divider header"
       }, "Research Labs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         id: "labs",
-        className: "ui stackable four column grid",
+        className: "ui stackable four cards",
         style: {
-          textAlign: 'center'
+          textAlign: 'center',
+          marginTop: '15px'
         }
       }, _content_output_labs_json__WEBPACK_IMPORTED_MODULE_8__.map(function (lab) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "column",
-          key: lab.id
+          className: "card",
+          key: lab.id,
+          style: {
+            padding: '15px'
+          }
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
           href: lab.url,
           target: "_blank",
-          className: "ui segment"
+          className: "ui "
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
           className: "img"
         }, lab.id !== '' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
@@ -15683,7 +15713,7 @@ var Location = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
         className: "map outline icon"
       }), "Space"), "test with example photos", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "ui four cards",
+        className: "ui stackable four cards",
         style: {
           marginTop: '30px'
         }
@@ -15775,22 +15805,25 @@ var News = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
         className: "paper plane outline icon"
       }), "News"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "ui segment"
+        className: "ui segment",
+        style: {
+          marginTop: '50px'
+        }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "ui divided items"
+        className: "ui unstackable divided items"
       }, _content_output_news_json__WEBPACK_IMPORTED_MODULE_8__.map(function (item) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
           className: "item",
           key: item.date
         }, item.image && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "ui tiny image"
+          className: "image"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
           src: "/static/images/news/".concat(item.image),
           style: {
             padding: '5px'
           }
         })), item.icon && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "ui tiny image",
+          className: "image",
           style: {
             margin: 'auto',
             textAlign: 'center',
@@ -15926,12 +15959,8 @@ var Page = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "ui stackable grid"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "one wide column"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "eleven wide column centered"
-      }, this.renderSwitch(this.props.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: "one wide column"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_footer__WEBPACK_IMPORTED_MODULE_18__["default"], null));
+      }, this.renderSwitch(this.props.id))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_footer__WEBPACK_IMPORTED_MODULE_18__["default"], null));
     }
   }], [{
     key: "getInitialProps",

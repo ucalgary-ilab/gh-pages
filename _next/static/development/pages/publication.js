@@ -15324,7 +15324,7 @@ var Detail = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
         className: "active section"
       }, this.publication.series)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
-        className: "ui grid",
+        className: "ui stackable grid",
         style: {
           marginTop: '10px'
         }
@@ -15399,7 +15399,7 @@ var Detail = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", null, "Figures"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
         id: "figure"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
-        className: "ui three cards",
+        className: "ui stackable three cards",
         style: {
           marginTop: '30px'
         }
@@ -15562,6 +15562,17 @@ var Header = /*#__PURE__*/function (_React$Component) {
       var _this2 = this;
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "ui right vertical sidebar menu"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        className: "item",
+        href: "/"
+      }, "Home"), this.items.map(function (item) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+          className: _this2.props.current == item ? 'item active' : 'item',
+          href: "/".concat(item.toLowerCase()),
+          key: item
+        }, item);
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "ui stackable secondary pointing container menu",
         style: {
           borderBottom: 'none',
@@ -15582,10 +15593,19 @@ var Header = /*#__PURE__*/function (_React$Component) {
       }, this.items.map(function (item) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
           className: _this2.props.current == item ? 'item active' : 'item',
-          href: item === 'Home' ? '/' : "/".concat(item.toLowerCase()),
+          href: "/".concat(item.toLowerCase()),
           key: item
         }, item);
-      }))));
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "toc item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        href: "/"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("b", null, "UCalgary iLab")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
+        style: {
+          float: 'right'
+        },
+        className: "sidebar icon"
+      })))));
     }
   }]);
 
@@ -15803,7 +15823,7 @@ var Publication = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!***********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpublication&absolutePagePath=%2FUsers%2Fryosuzuki%2FDocuments%2Filab%2Filab-website%2Fpages%2Fpublication.js ***!
   \***********************************************************************************************************************************************************/
@@ -15826,5 +15846,5 @@ module.exports = dll_4896fa23ba8deda57da6;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=publication.js.map

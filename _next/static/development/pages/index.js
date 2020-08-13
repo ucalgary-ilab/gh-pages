@@ -13445,7 +13445,7 @@ var Detail = /*#__PURE__*/function (_React$Component) {
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
         className: "active section"
       }, this.publication.series)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
-        className: "ui grid",
+        className: "ui stackable grid",
         style: {
           marginTop: '10px'
         }
@@ -13459,7 +13459,10 @@ var Detail = /*#__PURE__*/function (_React$Component) {
         src: "/static/images/publications/cover/".concat(this.publication.id, ".jpg")
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
         className: "thirteen wide column"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", null, this.publication.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", {
+      }, this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
+        href: "/publications/".concat(this.publication.id),
+        target: "_blank"
+      }, this.publication.title)), !this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", null, this.publication.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", {
         className: "meta"
       }, this.publication.authors.map(function (author) {
         return _this2.names.includes(author) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
@@ -13481,7 +13484,7 @@ var Detail = /*#__PURE__*/function (_React$Component) {
         className: "embed",
         width: "100%",
         height: "315",
-        src: "".concat(this.publication.embed, "?"),
+        src: "".concat(this.publication.embed),
         srcDoc: "<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=".concat(this.publication.embed, "?autoplay=1><img src=").concat(this.publication.embedThumbnail, "><span>\u25B6</span></a>"),
         frameBorder: "0",
         allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
@@ -13517,7 +13520,7 @@ var Detail = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", null, "Figures"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
         id: "figure"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
-        className: "ui three cards",
+        className: "ui stackable three cards",
         style: {
           marginTop: '30px'
         }
@@ -13680,6 +13683,17 @@ var Header = /*#__PURE__*/function (_React$Component) {
       var _this2 = this;
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "ui right vertical sidebar menu"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        className: "item",
+        href: "/"
+      }, "Home"), this.items.map(function (item) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+          className: _this2.props.current == item ? 'item active' : 'item',
+          href: "/".concat(item.toLowerCase()),
+          key: item
+        }, item);
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "ui stackable secondary pointing container menu",
         style: {
           borderBottom: 'none',
@@ -13700,10 +13714,19 @@ var Header = /*#__PURE__*/function (_React$Component) {
       }, this.items.map(function (item) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
           className: _this2.props.current == item ? 'item active' : 'item',
-          href: item === 'Home' ? '/' : "/".concat(item.toLowerCase()),
+          href: "/".concat(item.toLowerCase()),
           key: item
         }, item);
-      }))));
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "toc item"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+        href: "/"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("b", null, "UCalgary iLab")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
+        style: {
+          float: 'right'
+        },
+        className: "sidebar icon"
+      })))));
     }
   }]);
 
@@ -13796,8 +13819,6 @@ var Index = /*#__PURE__*/function (_React$Component) {
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "ui stackable grid"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "one wide column"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "eleven wide column centered"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         id: "header-logo"
@@ -13823,9 +13844,7 @@ var Index = /*#__PURE__*/function (_React$Component) {
         short: "true"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_location__WEBPACK_IMPORTED_MODULE_13__["default"], {
         short: "true"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "one wide column"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_footer__WEBPACK_IMPORTED_MODULE_14__["default"], null));
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_footer__WEBPACK_IMPORTED_MODULE_14__["default"], null));
     }
   }]);
 
@@ -13891,18 +13910,22 @@ var Labs = /*#__PURE__*/function (_React$Component) {
         className: "ui horizontal divider header"
       }, "Research Labs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         id: "labs",
-        className: "ui stackable four column grid",
+        className: "ui stackable four cards",
         style: {
-          textAlign: 'center'
+          textAlign: 'center',
+          marginTop: '15px'
         }
       }, _content_output_labs_json__WEBPACK_IMPORTED_MODULE_8__.map(function (lab) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "column",
-          key: lab.id
+          className: "card",
+          key: lab.id,
+          style: {
+            padding: '15px'
+          }
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
           href: lab.url,
           target: "_blank",
-          className: "ui segment"
+          className: "ui "
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
           className: "img"
         }, lab.id !== '' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
@@ -14014,7 +14037,7 @@ var Location = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
         className: "map outline icon"
       }), "Space"), "test with example photos", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "ui four cards",
+        className: "ui stackable four cards",
         style: {
           marginTop: '30px'
         }
@@ -14106,22 +14129,25 @@ var News = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("i", {
         className: "paper plane outline icon"
       }), "News"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "ui segment"
+        className: "ui segment",
+        style: {
+          marginTop: '50px'
+        }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "ui divided items"
+        className: "ui unstackable divided items"
       }, _content_output_news_json__WEBPACK_IMPORTED_MODULE_8__.map(function (item) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
           className: "item",
           key: item.date
         }, item.image && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "ui tiny image"
+          className: "image"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
           src: "/static/images/news/".concat(item.image),
           style: {
             padding: '5px'
           }
         })), item.icon && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-          className: "ui tiny image",
+          className: "image",
           style: {
             margin: 'auto',
             textAlign: 'center',
@@ -14658,7 +14684,16 @@ var Publications = /*#__PURE__*/function (_React$Component) {
           target: "_blank"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("i", {
           className: "far fa-file-pdf fa-fw"
-        }), " pdf")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
+        }), " pdf"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
+          className: "actions",
+          style: {
+            float: 'right',
+            cursor: 'pointer',
+            color: 'grey'
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("i", {
+          className: "ui right cancel close icon"
+        }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "content"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_detail__WEBPACK_IMPORTED_MODULE_14__["default"], {
           publication: publication,
@@ -14668,7 +14703,11 @@ var Publications = /*#__PURE__*/function (_React$Component) {
           files: _content_output_files_json__WEBPACK_IMPORTED_MODULE_17__,
           vimeo: _content_output_vimeo_json__WEBPACK_IMPORTED_MODULE_18__,
           short: "true"
-        })));
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
+          className: "actions"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
+          className: "ui right cancel button"
+        }, "Close")));
       })), this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         className: "ui vertical segment stackable",
         style: {

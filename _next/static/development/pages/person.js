@@ -15347,19 +15347,13 @@ var Detail = /*#__PURE__*/function (_React$Component) {
 
   var _super = _createSuper(Detail);
 
-  function Detail() {
+  function Detail(props) {
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_6__["default"])(this, Detail);
 
-    return _super.apply(this, arguments);
+    return _super.call(this, props);
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_7__["default"])(Detail, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prev) {
-      console.log('update');
-      console.log(prev);
-    }
-  }, {
     key: "render",
     value: function render() {
       var publication = this.props.publication;
@@ -15633,23 +15627,26 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_b
 
 
 
-var items = ['Publications', 'People', 'Courses', 'Facility', 'News', 'Location'];
 
 var Header = /*#__PURE__*/function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__["default"])(Header, _React$Component);
 
   var _super = _createSuper(Header);
 
-  function Header() {
+  function Header(props) {
+    var _this;
+
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Header);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+    _this.items = ['Publications', 'People', 'Courses', 'Facility', 'News', 'Location'];
+    return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Header, [{
     key: "render",
     value: function render() {
-      var _this = this;
+      var _this2 = this;
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "ui stackable secondary pointing container menu",
@@ -15669,9 +15666,9 @@ var Header = /*#__PURE__*/function (_React$Component) {
         }
       }, "UCalgary iLab"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "right menu"
-      }, items.map(function (item) {
+      }, this.items.map(function (item) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-          className: _this.props.current == item ? 'item active' : 'item',
+          className: _this2.props.current == item ? 'item active' : 'item',
           href: item === 'Home' ? '/' : "/".concat(item.toLowerCase()),
           key: item
         }, item);
@@ -15736,10 +15733,44 @@ var Person = /*#__PURE__*/function (_React$Component) {
 
   var _super = _createSuper(Person);
 
-  function Person() {
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(Person, null, [{
+    key: "getInitialProps",
+    value: function () {
+      var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])( /*#__PURE__*/_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee(req) {
+        var id;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                id = req.query.id;
+                return _context.abrupt("return", {
+                  id: id
+                });
+
+              case 2:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      function getInitialProps(_x) {
+        return _getInitialProps.apply(this, arguments);
+      }
+
+      return getInitialProps;
+    }()
+  }]);
+
+  function Person(props) {
+    var _this;
+
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Person);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+    _this.person = __webpack_require__("./content/output/people sync recursive ^\\.\\/.*\\.json$")("./".concat(_this.props.id, ".json"));
+    return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(Person, [{
@@ -15796,11 +15827,9 @@ var Person = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this = this;
+      var _this2 = this;
 
-      var person = __webpack_require__("./content/output/people sync recursive ^\\.\\/.*\\.json$")("./".concat(this.props.id, ".json"));
-
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("title", null, "".concat(person.name, " - Interactions Lab | University of Calgary HCI Group")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_header__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("title", null, "".concat(this.person.name, " - Interactions Lab | University of Calgary HCI Group")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_header__WEBPACK_IMPORTED_MODULE_10__["default"], {
         current: "People"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "ui stackable grid"
@@ -15820,54 +15849,26 @@ var Person = /*#__PURE__*/function (_React$Component) {
         style: {
           margin: 'auto'
         }
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", null, person.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", null, person.title), person.url && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
-        href: person.url,
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", null, this.person.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", null, this.person.title), this.person.url && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: this.person.url,
         target: "_blank"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-link fa-fw"
-      }), person.url)), person.scholar && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
-        href: person.scholar,
+      }), this.person.url)), this.person.scholar && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: this.person.scholar,
         target: "_blank"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         className: "fas fa-graduation-cap fa-fw"
       }), "Google Scholar")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         class: "ui horizontal small divided link list"
       }, ['cv', 'facebook', 'twitter', 'github', 'linkedin', 'email'].map(function (key) {
-        return _this.renderLink(person, key);
+        return _this2.renderLink(_this2.person, key);
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_publications__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        author: person.name
+        author: this.person.name
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "one wide column"
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_footer__WEBPACK_IMPORTED_MODULE_12__["default"], null));
     }
-  }], [{
-    key: "getInitialProps",
-    value: function () {
-      var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])( /*#__PURE__*/_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee(req) {
-        var id;
-        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                id = req.query.id;
-                return _context.abrupt("return", {
-                  id: id
-                });
-
-              case 2:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      }));
-
-      function getInitialProps(_x) {
-        return _getInitialProps.apply(this, arguments);
-      }
-
-      return getInitialProps;
-    }()
   }]);
 
   return Person;
@@ -15957,12 +15958,101 @@ var Publications = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       publication: null
     };
+
+    _this.getPublications();
+
+    _this.getPeople();
+
+    if (_this.props.short) {
+      _this.publications = _this.publications.slice(0, 20);
+    }
+
+    if (_this.props.author) {
+      _this.publications = _this.publications.filter(function (publication) {
+        return publication.authors.includes(_this.props.author);
+      });
+    }
+
     return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_9__["default"])(Publications, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {}
+    key: "getPublications",
+    value: function getPublications() {
+      var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
+
+      var keys = fileNames.filter(function (fileName) {
+        return fileName.includes('publications');
+      });
+      this.publications = [];
+
+      var _iterator = _createForOfIteratorHelper(keys),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var key = _step.value;
+          this.publications.push(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[key]);
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      this.publications = this.publications.sort(function (a, b) {
+        return new Date(b.date) - new Date(a.date);
+      });
+    }
+  }, {
+    key: "getPeople",
+    value: function getPeople() {
+      var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
+
+      var keys = fileNames.filter(function (fileName) {
+        return fileName.includes('people');
+      });
+      this.people = [];
+
+      var _iterator2 = _createForOfIteratorHelper(keys),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var key = _step2.value;
+          var id = key.split('/')[3].replace('.json', '');
+
+          var person = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[key], {
+            id: id
+          });
+
+          this.people.push(person);
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+
+      this.names = this.people.map(function (person) {
+        return person.name;
+      });
+      this.namesId = {};
+
+      var _iterator3 = _createForOfIteratorHelper(this.people),
+          _step3;
+
+      try {
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var _person = _step3.value;
+          this.namesId[_person.name] = _person.id;
+        }
+      } catch (err) {
+        _iterator3.e(err);
+      } finally {
+        _iterator3.f();
+      }
+    }
   }, {
     key: "onClick",
     value: function onClick(publication) {
@@ -15974,77 +16064,6 @@ var Publications = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       var _this2 = this;
-
-      var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
-
-      var keys = fileNames.filter(function (fileName) {
-        return fileName.includes('publications');
-      });
-      var publications = [];
-
-      var _iterator = _createForOfIteratorHelper(keys),
-          _step;
-
-      try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
-          var key = _step.value;
-          publications.push(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[key]);
-        }
-      } catch (err) {
-        _iterator.e(err);
-      } finally {
-        _iterator.f();
-      }
-
-      publications = publications.sort(function (a, b) {
-        return new Date(b.date) - new Date(a.date);
-      });
-      fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
-      keys = fileNames.filter(function (fileName) {
-        return fileName.includes('people');
-      });
-      var people = [];
-
-      var _iterator2 = _createForOfIteratorHelper(keys),
-          _step2;
-
-      try {
-        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-          var _key = _step2.value;
-
-          var id = _key.split('/')[3].replace('.json', '');
-
-          var _person = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[_key], {
-            id: id
-          });
-
-          people.push(_person);
-        }
-      } catch (err) {
-        _iterator2.e(err);
-      } finally {
-        _iterator2.f();
-      }
-
-      var names = people.map(function (person) {
-        return person.name;
-      });
-      var namesId = {};
-
-      for (var _i = 0, _people = people; _i < _people.length; _i++) {
-        var person = _people[_i];
-        namesId[person.name] = person.id;
-      }
-
-      if (this.props.short) {
-        publications = publications.slice(0, 20);
-      }
-
-      if (this.props.author) {
-        publications = publications.filter(function (publication) {
-          return publication.authors.includes(_this2.props.author);
-        });
-      }
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         id: "publications",
@@ -16058,7 +16077,7 @@ var Publications = /*#__PURE__*/function (_React$Component) {
         style: {
           marginTop: '50px'
         }
-      }, publications.map(function (publication, i) {
+      }, this.publications.map(function (publication, i) {
         var id = publication.base.split('.json')[0];
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "publication ui vertical segment stackable grid",
@@ -16089,11 +16108,11 @@ var Publications = /*#__PURE__*/function (_React$Component) {
             color: '#00716C'
           }
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("b", null, publication.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("p", null, publication.authors.map(function (author) {
-          return names.includes(author) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
-            href: "/people/".concat(namesId[author]),
+          return _this2.names.includes(author) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
+            href: "/people/".concat(_this2.namesId[author]),
             key: author
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("img", {
-            src: "/static/images/people/".concat(namesId[author], ".jpg"),
+            src: "/static/images/people/".concat(_this2.namesId[author], ".jpg"),
             className: "ui circular spaced image mini-profile"
           }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("span", {
             className: "author-link"
@@ -16124,8 +16143,8 @@ var Publications = /*#__PURE__*/function (_React$Component) {
         className: "content"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_detail__WEBPACK_IMPORTED_MODULE_16__["default"], {
         publication: this.state.publication,
-        namesId: namesId,
-        people: people
+        namesId: this.namesId,
+        people: this.people
       }))), this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         className: "ui vertical segment stackable",
         style: {
@@ -16134,7 +16153,7 @@ var Publications = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
         className: "ui button",
         href: "/publications"
-      }, "+ ".concat(publications.length, " more publications"))));
+      }, "+ ".concat(this.publications.length, " more publications"))));
     }
   }]);
 

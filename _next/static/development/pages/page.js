@@ -15034,19 +15034,13 @@ var Detail = /*#__PURE__*/function (_React$Component) {
 
   var _super = _createSuper(Detail);
 
-  function Detail() {
+  function Detail(props) {
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_6__["default"])(this, Detail);
 
-    return _super.apply(this, arguments);
+    return _super.call(this, props);
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_7__["default"])(Detail, [{
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prev) {
-      console.log('update');
-      console.log(prev);
-    }
-  }, {
     key: "render",
     value: function render() {
       var publication = this.props.publication;
@@ -15422,23 +15416,26 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_b
 
 
 
-var items = ['Publications', 'People', 'Courses', 'Facility', 'News', 'Location'];
 
 var Header = /*#__PURE__*/function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__["default"])(Header, _React$Component);
 
   var _super = _createSuper(Header);
 
-  function Header() {
+  function Header(props) {
+    var _this;
+
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Header);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+    _this.items = ['Publications', 'People', 'Courses', 'Facility', 'News', 'Location'];
+    return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Header, [{
     key: "render",
     value: function render() {
-      var _this = this;
+      var _this2 = this;
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "ui stackable secondary pointing container menu",
@@ -15458,9 +15455,9 @@ var Header = /*#__PURE__*/function (_React$Component) {
         }
       }, "UCalgary iLab"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "right menu"
-      }, items.map(function (item) {
+      }, this.items.map(function (item) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-          className: _this.props.current == item ? 'item active' : 'item',
+          className: _this2.props.current == item ? 'item active' : 'item',
           href: item === 'Home' ? '/' : "/".concat(item.toLowerCase()),
           key: item
         }, item);
@@ -15524,9 +15521,6 @@ var Labs = /*#__PURE__*/function (_React$Component) {
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Labs, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {}
-  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
@@ -15599,29 +15593,29 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_b
 
 
 
-var images = _content_output_files_json__WEBPACK_IMPORTED_MODULE_8__.children.filter(function (dir) {
-  return dir.name === 'images';
-})[0].children.filter(function (dir) {
-  return dir.name === 'space';
-})[0].children.map(function (file) {
-  return file.path;
-});
 
 var Location = /*#__PURE__*/function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_3__["default"])(Location, _React$Component);
 
   var _super = _createSuper(Location);
 
-  function Location() {
+  function Location(props) {
+    var _this;
+
     Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Location);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+    _this.images = _content_output_files_json__WEBPACK_IMPORTED_MODULE_8__.children.filter(function (dir) {
+      return dir.name === 'images';
+    })[0].children.filter(function (dir) {
+      return dir.name === 'space';
+    })[0].children.map(function (file) {
+      return file.path;
+    });
+    return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Location, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {}
-  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -15660,7 +15654,7 @@ var Location = /*#__PURE__*/function (_React$Component) {
         style: {
           marginTop: '30px'
         }
-      }, images.map(function (src) {
+      }, this.images.map(function (src) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
           className: "card",
           href: "/".concat(src),
@@ -15738,9 +15732,6 @@ var News = /*#__PURE__*/function (_React$Component) {
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(News, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {}
-  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -15957,27 +15948,27 @@ var Page = /*#__PURE__*/function (_React$Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol/iterator */ "./node_modules/@babel/runtime-corejs2/core-js/symbol/iterator.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/symbol */ "./node_modules/@babel/runtime-corejs2/core-js/symbol.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-markdown */ "./node_modules/react-markdown/lib/react-markdown.js");
@@ -15998,84 +15989,89 @@ var _content_output_summary_json__WEBPACK_IMPORTED_MODULE_15___namespace = /*#__
 
 
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_11__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_11__["default"])(this).constructor; result = _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default()(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_10__["default"])(this, result); }; }
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_3___default.a === "undefined" || o[_babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_2___default.a] == null) { if (_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_1___default()(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default.a) return false; if (_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default.a.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_6___default()(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof _babel_runtime_corejs2_core_js_symbol__WEBPACK_IMPORTED_MODULE_4___default.a === "undefined" || o[_babel_runtime_corejs2_core_js_symbol_iterator__WEBPACK_IMPORTED_MODULE_3___default.a] == null) { if (_babel_runtime_corejs2_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_2___default()(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_1___default()(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_5___default()(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return _babel_runtime_corejs2_core_js_array_from__WEBPACK_IMPORTED_MODULE_4___default()(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_12__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_12__["default"])(this).constructor; result = _babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5___default()(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_11__["default"])(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5___default.a) return false; if (_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5___default.a.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(_babel_runtime_corejs2_core_js_reflect_construct__WEBPACK_IMPORTED_MODULE_5___default()(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 
 
-var types = [{
-  key: 'faculty',
-  title: 'Faculty'
-}, {
-  key: 'postdoc',
-  title: 'Post Docs'
-}, {
-  key: 'phd',
-  title: 'PhD Students'
-}, {
-  key: 'master',
-  title: 'Masters Students'
-}, {
-  key: 'undergrad',
-  title: 'Undergrad Students'
-}, {
-  key: 'visiting',
-  title: 'Visiting Researchers'
-}, {
-  key: 'alumni',
-  title: 'Alumni'
-}];
 
-var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_12___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
-
-var keys = fileNames.filter(function (fileName) {
-  return fileName.includes('people');
-});
-var people = [];
-
-var _iterator = _createForOfIteratorHelper(keys),
-    _step;
-
-try {
-  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    var key = _step.value;
-    var id = key.split('/')[3].replace('.json', '');
-
-    var person = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[key], {
-      id: id
-    });
-
-    people.push(person);
-  }
-} catch (err) {
-  _iterator.e(err);
-} finally {
-  _iterator.f();
-}
 
 var People = /*#__PURE__*/function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_9__["default"])(People, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_10__["default"])(People, _React$Component);
 
   var _super = _createSuper(People);
 
-  function People() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_7__["default"])(this, People);
+  function People(props) {
+    var _this;
 
-    return _super.apply(this, arguments);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_8__["default"])(this, People);
+
+    _this = _super.call(this, props);
+    _this.types = [{
+      key: 'faculty',
+      title: 'Faculty'
+    }, {
+      key: 'postdoc',
+      title: 'Post Docs'
+    }, {
+      key: 'phd',
+      title: 'PhD Students'
+    }, {
+      key: 'master',
+      title: 'Masters Students'
+    }, {
+      key: 'undergrad',
+      title: 'Undergrad Students'
+    }, {
+      key: 'visiting',
+      title: 'Visiting Researchers'
+    }, {
+      key: 'alumni',
+      title: 'Alumni'
+    }];
+
+    if (_this.props.short) {
+      _this.types = _this.types.slice(0, 4); // this.types.splice(4, 2)
+    }
+
+    var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
+
+    var keys = fileNames.filter(function (fileName) {
+      return fileName.includes('people');
+    });
+    _this.people = [];
+
+    var _iterator = _createForOfIteratorHelper(keys),
+        _step;
+
+    try {
+      for (_iterator.s(); !(_step = _iterator.n()).done;) {
+        var key = _step.value;
+        var id = key.split('/')[3].replace('.json', '');
+
+        var person = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[key], {
+          id: id
+        });
+
+        _this.people.push(person);
+      }
+    } catch (err) {
+      _iterator.e(err);
+    } finally {
+      _iterator.f();
+    }
+
+    return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_8__["default"])(People, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {}
-  }, {
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_9__["default"])(People, [{
     key: "getTitle",
     value: function getTitle(person) {
       if (person.title) return person;
@@ -16132,11 +16128,7 @@ var People = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this = this;
-
-      if (this.props.short) {
-        types = types.slice(0, 4); // types.splice(4, 2)
-      }
+      var _this2 = this;
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         id: "people",
@@ -16145,17 +16137,17 @@ var People = /*#__PURE__*/function (_React$Component) {
         className: "ui horizontal divider header"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("i", {
         className: "child icon"
-      }), "People"), types.map(function (type) {
+      }), "People"), this.types.map(function (type) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "people-category",
           key: type.title
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("h2", null, type.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "ui grid"
-        }, people.filter(function (person) {
+        }, _this2.people.filter(function (person) {
           return person.type === type.key;
         }) // filter
         .map(function (person) {
-          person = _this.getTitle(person);
+          person = _this2.getTitle(person);
           return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
             className: "four wide column person",
             href: "/people/".concat(person.id),
@@ -16265,12 +16257,101 @@ var Publications = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       publication: null
     };
+
+    _this.getPublications();
+
+    _this.getPeople();
+
+    if (_this.props.short) {
+      _this.publications = _this.publications.slice(0, 20);
+    }
+
+    if (_this.props.author) {
+      _this.publications = _this.publications.filter(function (publication) {
+        return publication.authors.includes(_this.props.author);
+      });
+    }
+
     return _this;
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_9__["default"])(Publications, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {}
+    key: "getPublications",
+    value: function getPublications() {
+      var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
+
+      var keys = fileNames.filter(function (fileName) {
+        return fileName.includes('publications');
+      });
+      this.publications = [];
+
+      var _iterator = _createForOfIteratorHelper(keys),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var key = _step.value;
+          this.publications.push(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[key]);
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      this.publications = this.publications.sort(function (a, b) {
+        return new Date(b.date) - new Date(a.date);
+      });
+    }
+  }, {
+    key: "getPeople",
+    value: function getPeople() {
+      var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
+
+      var keys = fileNames.filter(function (fileName) {
+        return fileName.includes('people');
+      });
+      this.people = [];
+
+      var _iterator2 = _createForOfIteratorHelper(keys),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var key = _step2.value;
+          var id = key.split('/')[3].replace('.json', '');
+
+          var person = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[key], {
+            id: id
+          });
+
+          this.people.push(person);
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+
+      this.names = this.people.map(function (person) {
+        return person.name;
+      });
+      this.namesId = {};
+
+      var _iterator3 = _createForOfIteratorHelper(this.people),
+          _step3;
+
+      try {
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var _person = _step3.value;
+          this.namesId[_person.name] = _person.id;
+        }
+      } catch (err) {
+        _iterator3.e(err);
+      } finally {
+        _iterator3.f();
+      }
+    }
   }, {
     key: "onClick",
     value: function onClick(publication) {
@@ -16282,77 +16363,6 @@ var Publications = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       var _this2 = this;
-
-      var fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
-
-      var keys = fileNames.filter(function (fileName) {
-        return fileName.includes('publications');
-      });
-      var publications = [];
-
-      var _iterator = _createForOfIteratorHelper(keys),
-          _step;
-
-      try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
-          var key = _step.value;
-          publications.push(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[key]);
-        }
-      } catch (err) {
-        _iterator.e(err);
-      } finally {
-        _iterator.f();
-      }
-
-      publications = publications.sort(function (a, b) {
-        return new Date(b.date) - new Date(a.date);
-      });
-      fileNames = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap);
-      keys = fileNames.filter(function (fileName) {
-        return fileName.includes('people');
-      });
-      var people = [];
-
-      var _iterator2 = _createForOfIteratorHelper(keys),
-          _step2;
-
-      try {
-        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-          var _key = _step2.value;
-
-          var id = _key.split('/')[3].replace('.json', '');
-
-          var _person = _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6___default()(_content_output_summary_json__WEBPACK_IMPORTED_MODULE_15__.fileMap[_key], {
-            id: id
-          });
-
-          people.push(_person);
-        }
-      } catch (err) {
-        _iterator2.e(err);
-      } finally {
-        _iterator2.f();
-      }
-
-      var names = people.map(function (person) {
-        return person.name;
-      });
-      var namesId = {};
-
-      for (var _i = 0, _people = people; _i < _people.length; _i++) {
-        var person = _people[_i];
-        namesId[person.name] = person.id;
-      }
-
-      if (this.props.short) {
-        publications = publications.slice(0, 20);
-      }
-
-      if (this.props.author) {
-        publications = publications.filter(function (publication) {
-          return publication.authors.includes(_this2.props.author);
-        });
-      }
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         id: "publications",
@@ -16366,7 +16376,7 @@ var Publications = /*#__PURE__*/function (_React$Component) {
         style: {
           marginTop: '50px'
         }
-      }, publications.map(function (publication, i) {
+      }, this.publications.map(function (publication, i) {
         var id = publication.base.split('.json')[0];
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "publication ui vertical segment stackable grid",
@@ -16397,11 +16407,11 @@ var Publications = /*#__PURE__*/function (_React$Component) {
             color: '#00716C'
           }
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("b", null, publication.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("p", null, publication.authors.map(function (author) {
-          return names.includes(author) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
-            href: "/people/".concat(namesId[author]),
+          return _this2.names.includes(author) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
+            href: "/people/".concat(_this2.namesId[author]),
             key: author
           }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("img", {
-            src: "/static/images/people/".concat(namesId[author], ".jpg"),
+            src: "/static/images/people/".concat(_this2.namesId[author], ".jpg"),
             className: "ui circular spaced image mini-profile"
           }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("span", {
             className: "author-link"
@@ -16432,8 +16442,8 @@ var Publications = /*#__PURE__*/function (_React$Component) {
         className: "content"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_detail__WEBPACK_IMPORTED_MODULE_16__["default"], {
         publication: this.state.publication,
-        namesId: namesId,
-        people: people
+        namesId: this.namesId,
+        people: this.people
       }))), this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         className: "ui vertical segment stackable",
         style: {
@@ -16442,7 +16452,7 @@ var Publications = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("a", {
         className: "ui button",
         href: "/publications"
-      }, "+ ".concat(publications.length, " more publications"))));
+      }, "+ ".concat(this.publications.length, " more publications"))));
     }
   }]);
 

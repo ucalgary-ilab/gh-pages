@@ -15145,7 +15145,10 @@ var Detail = /*#__PURE__*/function (_React$Component) {
         src: "/static/images/publications/cover/".concat(this.publication.id, ".jpg")
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("div", {
         className: "thirteen wide column"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", null, this.publication.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", {
+      }, this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
+        href: "/publications/".concat(this.publication.id),
+        target: "_blank"
+      }, this.publication.title)), !this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("h1", null, this.publication.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("p", {
         className: "meta"
       }, this.publication.authors.map(function (author) {
         return _this2.names.includes(author) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement("a", {
@@ -15167,7 +15170,7 @@ var Detail = /*#__PURE__*/function (_React$Component) {
         className: "embed",
         width: "100%",
         height: "315",
-        src: "".concat(this.publication.embed, "?"),
+        src: "".concat(this.publication.embed),
         srcDoc: "<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=".concat(this.publication.embed, "?autoplay=1><img src=").concat(this.publication.embedThumbnail, "><span>\u25B6</span></a>"),
         frameBorder: "0",
         allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
@@ -16469,7 +16472,16 @@ var Publications = /*#__PURE__*/function (_React$Component) {
           target: "_blank"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("i", {
           className: "far fa-file-pdf fa-fw"
-        }), " pdf")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
+        }), " pdf"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
+          className: "actions",
+          style: {
+            float: 'right',
+            cursor: 'pointer',
+            color: 'grey'
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("i", {
+          className: "ui right cancel close icon"
+        }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
           className: "content"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement(_detail__WEBPACK_IMPORTED_MODULE_14__["default"], {
           publication: publication,
@@ -16479,7 +16491,11 @@ var Publications = /*#__PURE__*/function (_React$Component) {
           files: _content_output_files_json__WEBPACK_IMPORTED_MODULE_17__,
           vimeo: _content_output_vimeo_json__WEBPACK_IMPORTED_MODULE_18__,
           short: "true"
-        })));
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
+          className: "actions"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
+          className: "ui right cancel button"
+        }, "Close")));
       })), this.props.short && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_13___default.a.createElement("div", {
         className: "ui vertical segment stackable",
         style: {

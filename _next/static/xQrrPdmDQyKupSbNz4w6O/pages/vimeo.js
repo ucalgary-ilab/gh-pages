@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([["f378"],{"6ixC":function(n,i,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/vimeo",function(){var n=o("lVAs");return{page:n.default||n}}])},lVAs:function(n,i){vimeo.js}},[["6ixC","5d41"]]]);

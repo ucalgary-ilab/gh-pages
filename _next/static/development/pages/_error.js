@@ -1340,7 +1340,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.11' };
+var core = module.exports = { version: '2.6.12' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -2568,7 +2568,7 @@ var store = global[SHARED] || (global[SHARED] = {});
 })('versions', []).push({
   version: core.version,
   mode: __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js") ? 'pure' : 'global',
-  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
+  copyright: '© 2020 Denis Pushkarev (zloirock.ru)'
 });
 
 
@@ -3791,13 +3791,13 @@ exports.default = Head;
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
-var _construct = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js"));
+var _Reflect$construct = __webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js");
 
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js"));
 
-var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js"));
-
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js"));
+
+var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js"));
 
 var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js"));
 
@@ -3809,9 +3809,9 @@ var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/
 
 var _set = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js"));
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = (0, _construct.default)(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = _Reflect$construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_construct.default) return false; if (_construct.default.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call((0, _construct.default)(Date, [], function () {})); return true; } catch (e) { return false; } }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_Reflect$construct) return false; if (_Reflect$construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(_Reflect$construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -3837,17 +3837,6 @@ function withSideEffect() {
     (0, _inherits2.default)(SideEffect, _react_1$Component);
 
     var _super = _createSuper(SideEffect);
-
-    (0, _createClass2.default)(SideEffect, null, [{
-      key: "rewind",
-      // Used when server rendering
-      value: function rewind() {
-        var recordedState = state;
-        state = undefined;
-        mountedInstances.clear();
-        return recordedState;
-      }
-    }]);
 
     function SideEffect(props) {
       var _this;
@@ -3884,6 +3873,15 @@ function withSideEffect() {
       key: "render",
       value: function render() {
         return null;
+      }
+    }], [{
+      key: "rewind",
+      value: // Used when server rendering
+      function rewind() {
+        var recordedState = state;
+        state = undefined;
+        mountedInstances.clear();
+        return recordedState;
       }
     }]);
     return SideEffect;
@@ -4061,23 +4059,23 @@ var styles = {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_f4f104c9ade4b03e7cea ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_de4187fe3d532e4453aa ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_f4f104c9ade4b03e7cea */ "dll-reference dll_f4f104c9ade4b03e7cea"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_de4187fe3d532e4453aa */ "dll-reference dll_de4187fe3d532e4453aa"))("./node_modules/react/index.js");
 
 /***/ }),
 
-/***/ "dll-reference dll_f4f104c9ade4b03e7cea":
+/***/ "dll-reference dll_de4187fe3d532e4453aa":
 /*!*******************************************!*\
-  !*** external "dll_f4f104c9ade4b03e7cea" ***!
+  !*** external "dll_de4187fe3d532e4453aa" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_f4f104c9ade4b03e7cea;
+module.exports = dll_de4187fe3d532e4453aa;
 
 /***/ })
 

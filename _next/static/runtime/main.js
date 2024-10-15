@@ -6775,7 +6775,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "/Users/ryosuzuki/Documents/ucalgary-ilab/ilab-website/.next");
+      source_map_support_1.rewriteStacktrace(error, "/home/clara/repos/ilab-website/.next");
       return error;
     }
   };

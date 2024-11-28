@@ -3500,42 +3500,32 @@ var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
     "default": mod
   };
 };
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
 var amphtml_context_1 = __webpack_require__(/*! ./amphtml-context */ "./node_modules/next-server/dist/lib/amphtml-context.js");
-
 function isAmp() {
   var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-      _ref$enabled = _ref.enabled,
-      enabled = _ref$enabled === void 0 ? false : _ref$enabled,
-      _ref$hybrid = _ref.hybrid,
-      hybrid = _ref$hybrid === void 0 ? false : _ref$hybrid,
-      _ref$hasQuery = _ref.hasQuery,
-      hasQuery = _ref$hasQuery === void 0 ? false : _ref$hasQuery;
-
+    _ref$enabled = _ref.enabled,
+    enabled = _ref$enabled === void 0 ? false : _ref$enabled,
+    _ref$hybrid = _ref.hybrid,
+    hybrid = _ref$hybrid === void 0 ? false : _ref$hybrid,
+    _ref$hasQuery = _ref.hasQuery,
+    hasQuery = _ref$hasQuery === void 0 ? false : _ref$hasQuery;
   return enabled && (!hybrid || hybrid && hasQuery);
 }
-
 exports.isAmp = isAmp;
-
 function useAmp() {
-  var ampMode = react_1.default.useContext(amphtml_context_1.AmpModeContext); // un-comment below to not be considered AMP in dirty mode
-
+  var ampMode = react_1.default.useContext(amphtml_context_1.AmpModeContext);
+  // un-comment below to not be considered AMP in dirty mode
   return isAmp(ampMode); // && ampMode.hasQuery
 }
-
 exports.useAmp = useAmp;
-
 function withAmp(Component) {
   var _ref2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
-      _ref2$hybrid = _ref2.hybrid,
-      hybrid = _ref2$hybrid === void 0 ? false : _ref2$hybrid;
-
+    _ref2$hybrid = _ref2.hybrid,
+    hybrid = _ref2$hybrid === void 0 ? false : _ref2$hybrid;
   function WithAmpWrapper() {
     var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var ampMode = react_1.default.useContext(amphtml_context_1.AmpModeContext);
@@ -3543,12 +3533,10 @@ function withAmp(Component) {
     ampMode.hybrid = hybrid;
     return react_1.default.createElement(Component, props);
   }
-
   WithAmpWrapper.__nextAmpOnly = !hybrid;
   WithAmpWrapper.getInitialProps = Component.getInitialProps;
   return WithAmpWrapper;
 }
-
 exports.withAmp = withAmp;
 
 /***/ }),
@@ -3566,19 +3554,14 @@ exports.withAmp = withAmp;
 var __importStar = void 0 && (void 0).__importStar || function (mod) {
   if (mod && mod.__esModule) return mod;
   var result = {};
-  if (mod != null) for (var k in mod) {
-    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-  }
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
   result["default"] = mod;
   return result;
 };
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
 var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
 exports.AmpModeContext = React.createContext({});
 
 /***/ }),
@@ -3596,19 +3579,14 @@ exports.AmpModeContext = React.createContext({});
 var __importStar = void 0 && (void 0).__importStar || function (mod) {
   if (mod && mod.__esModule) return mod;
   var result = {};
-  if (mod != null) for (var k in mod) {
-    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-  }
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
   result["default"] = mod;
   return result;
 };
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
 var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
 exports.HeadManagerContext = React.createContext(null);
 
 /***/ }),
@@ -3624,29 +3602,20 @@ exports.HeadManagerContext = React.createContext(null);
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
-
 var _set = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js"));
-
 var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
     "default": mod
   };
 };
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
 var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
 var side_effect_1 = __importDefault(__webpack_require__(/*! ./side-effect */ "./node_modules/next-server/dist/lib/side-effect.js"));
-
 var amphtml_context_1 = __webpack_require__(/*! ./amphtml-context */ "./node_modules/next-server/dist/lib/amphtml-context.js");
-
 var head_manager_context_1 = __webpack_require__(/*! ./head-manager-context */ "./node_modules/next-server/dist/lib/head-manager-context.js");
-
 var amp_1 = __webpack_require__(/*! ./amp */ "./node_modules/next-server/dist/lib/amp.js");
-
 function defaultHead() {
   var className = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'next-head';
   var isAmp = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
@@ -3655,7 +3624,6 @@ function defaultHead() {
     charSet: "utf-8",
     className: className
   })];
-
   if (!isAmp) {
     head.push(react_1.default.createElement("meta", {
       key: "viewport",
@@ -3664,39 +3632,31 @@ function defaultHead() {
       className: className
     }));
   }
-
   return head;
 }
-
 exports.defaultHead = defaultHead;
-
 function onlyReactElement(list, child) {
   // React children can be "string" or "number" in this case we ignore them for backwards compat
   if (typeof child === "string" || typeof child === "number") {
     return list;
-  } // Adds support for React.Fragment
-
-
+  }
+  // Adds support for React.Fragment
   if (child.type === react_1.default.Fragment) {
     return list.concat(react_1.default.Children.toArray(child.props.children).reduce(function (fragmentList, fragmentChild) {
       if (typeof fragmentChild === "string" || typeof fragmentChild === "number") {
         return fragmentList;
       }
-
       return fragmentList.concat(fragmentChild);
     }, []));
   }
-
   return list.concat(child);
 }
-
 var METATYPES = ["name", "httpEquiv", "charSet", "viewport", "itemProp"];
 /*
  returns a function for filtering head child elements
  which shouldn't be duplicated, like <title/>
  Also adds support for deduplicated `key` properties
 */
-
 function unique() {
   var keys = new _set.default();
   var tags = new _set.default();
@@ -3708,19 +3668,16 @@ function unique() {
       keys.add(h.key);
       return true;
     }
-
     switch (h.type) {
       case "title":
       case "base":
         if (tags.has(h.type)) return false;
         tags.add(h.type);
         break;
-
       case "meta":
         for (var i = 0, len = METATYPES.length; i < len; i++) {
           var metatype = METATYPES[i];
           if (!h.props.hasOwnProperty(metatype)) continue;
-
           if (metatype === "charSet" || metatype === "viewport") {
             if (metaTypes.has(metatype)) return false;
             metaTypes.add(metatype);
@@ -3732,10 +3689,8 @@ function unique() {
             metaCategories[metatype] = categories;
           }
         }
-
         break;
     }
-
     return true;
   };
 }
@@ -3743,8 +3698,6 @@ function unique() {
  *
  * @param headElement List of multiple <Head> instances
  */
-
-
 function reduceComponents(headElements, props) {
   return headElements.reduce(function (list, headElement) {
     var headElementChildren = react_1.default.Children.toArray(headElement.props.children);
@@ -3758,9 +3711,7 @@ function reduceComponents(headElements, props) {
     });
   });
 }
-
 var Effect = side_effect_1.default();
-
 function Head(_ref) {
   var children = _ref.children;
   return react_1.default.createElement(amphtml_context_1.AmpModeContext.Consumer, null, function (ampMode) {
@@ -3773,7 +3724,6 @@ function Head(_ref) {
     });
   });
 }
-
 Head.rewind = Effect.rewind;
 exports.default = Head;
 
@@ -3790,69 +3740,43 @@ exports.default = Head;
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
-
 var _Reflect$construct = __webpack_require__(/*! @babel/runtime-corejs2/core-js/reflect/construct */ "./node_modules/@babel/runtime-corejs2/core-js/reflect/construct.js");
-
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js"));
-
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js"));
-
-var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js"));
-
-var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js"));
-
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js"));
-
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js"));
-
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js"));
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js"));
-
 var _set = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js"));
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = _Reflect$construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !_Reflect$construct) return false; if (_Reflect$construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(_Reflect$construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
+function _callSuper(t, o, e) { return o = (0, _getPrototypeOf2.default)(o), (0, _possibleConstructorReturn2.default)(t, _isNativeReflectConstruct() ? _Reflect$construct(o, e || [], (0, _getPrototypeOf2.default)(t).constructor) : o.apply(t, e)); }
+function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(_Reflect$construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
 var react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
 var isServer = typeof window === 'undefined';
-
 function withSideEffect() {
   var mountedInstances = new _set.default();
   var state;
-
   function emitChange(component) {
     state = component.props.reduceComponentsToState((0, _toConsumableArray2.default)(mountedInstances), component.props);
-
     if (component.props.handleStateChange) {
       component.props.handleStateChange(state);
     }
   }
-
   var SideEffect = /*#__PURE__*/function (_react_1$Component) {
-    (0, _inherits2.default)(SideEffect, _react_1$Component);
-
-    var _super = _createSuper(SideEffect);
-
     function SideEffect(props) {
       var _this;
-
       (0, _classCallCheck2.default)(this, SideEffect);
-      _this = _super.call(this, props);
-
+      _this = _callSuper(this, SideEffect, [props]);
       if (isServer) {
-        mountedInstances.add((0, _assertThisInitialized2.default)(_this));
-        emitChange((0, _assertThisInitialized2.default)(_this));
+        mountedInstances.add(_this);
+        emitChange(_this);
       }
-
       return _this;
     }
-
-    (0, _createClass2.default)(SideEffect, [{
+    (0, _inherits2.default)(SideEffect, _react_1$Component);
+    return (0, _createClass2.default)(SideEffect, [{
       key: "componentDidMount",
       value: function componentDidMount() {
         mountedInstances.add(this);
@@ -3876,7 +3800,8 @@ function withSideEffect() {
       }
     }], [{
       key: "rewind",
-      value: // Used when server rendering
+      value:
+      // Used when server rendering
       function rewind() {
         var recordedState = state;
         state = undefined;
@@ -3884,12 +3809,9 @@ function withSideEffect() {
         return recordedState;
       }
     }]);
-    return SideEffect;
   }(react_1.Component);
-
   return SideEffect;
 }
-
 exports.default = withSideEffect;
 
 /***/ }),
